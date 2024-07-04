@@ -1,3 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: lightskyblue;
+}
+
+header {
+  color: wheat;
+  background-image: url(/images/person-holding-cup-coffee.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+}
+header #logo-menu {
+  max-width: 10vh;
 }/*# sourceMappingURL=styles.css.map */

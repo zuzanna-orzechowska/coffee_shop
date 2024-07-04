@@ -1,3 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: lightskyblue;
+}
+
+header {
+    color: wheat; //!!ZMIENIĆ
+    background-image: url(/images/person-holding-cup-coffee.jpg); //! ZMIENIC
+    background-position: center center;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+
+    #logo-menu {
+        max-width: 10vh;
+    }
+
 }
