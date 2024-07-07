@@ -7,6 +7,7 @@
     <!--!!! TUTAJ DOPISAĆ OPIS-->
     <meta name="description" content="">
     <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
     <!-- custom links-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
@@ -16,7 +17,7 @@
     <header>
         <a href="index.html"><img src="/images/coffee-cup-logo.png" alt="cup of coffee with two coffee beans" id="logo"></a>
         <nav>
-            <ul>
+            <ul id="ul-menu">
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Cafeterias</a></li>
                 <li><a href="#">Delivery</a></li>
@@ -24,7 +25,7 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <i class="ri-menu-5-line"></i>
+        <i class="ri-menu-5-line" id="menu-icon" onclick="changeMenuIcon()"></i>
     </header>
     <div id="header-bottom">
         <h1>Cofove</h1>
