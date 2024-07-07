@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+/** kolory -> kolor kubka z logo #fee5cc / kolor ziarenek z kubka -> #ce6b09*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*header styling*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    padding: 3vh 3vh 0 3vh;
+    font-size: 20px;
+}
+
+#logo {
+    width: 100%;
+    max-width: 80px;
+    margin-left: 2vw;
+}
+
+header nav ul {
+    display: flex;
+    gap: 10vh;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header nav ul:last-of-type {
+    margin-right: 4vw;
+}
+
+header nav ul a {
+    color: #fee5cc;
+}
+
+header nav ul a:hover { /*! TUTAJ ANIMACJE ZROBIC ŻE TAK ŁADNIE SIE POJAWIA TEN FISTASZEK */
+    border-bottom: 3px solid black;
+}
+
+header i { /*! PAMIETAC O TYM W @MEDIA  */
+    color: #ce6b09;
+    font-size: 25px;
+    display: none;
+}
+
+#header-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    min-height: 70vh;
+    width: 100%;
+    padding-top: 10vh;
+    background-image: linear-gradient(to bottom left, rgba(59, 45, 30, 0.6), rgba(151, 140, 128, 0.6)), url("/images/background-image.jpg");
+    background-position: center 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: wheat;
+}
+
+#header-bottom h1 {
+    font-size: 60px;
+    line-height: 1.8;
+    margin-left: 13vw;
+    font-family: "Playwrite GB S", sans-serif;
+}
+
+#header-bottom q {
+    font-size: 20px;
+    line-height: 1.6;
+    font-style: italic;
+    margin-left: 16vw;
+    color: #fee5cc;
+}
+
+#header-bottom p {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-left: 13vw;
+}
+
+#header-bottom-shop {
+    display: flex;
+    gap: 1.5vw;
+}
+
+#header-bottom-shop p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fee5cc;
+}
+
+#header-bottom button {
+    width: 100%;
+    max-width: 1vw;
+    font-size: 28px;
+    border: none;
+    background-color: transparent;
+    transition: transform 0.55s ease;
+}
+
+#header-bottom button:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
