@@ -207,3 +207,49 @@ header nav ul a:hover:after {
     }
 
 }
+
+/*main content styling*/
+.section-cut {
+    width: 100%;
+    height: 10vh;
+    background: url("images/coffee-beans-background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background:  rgba(215, 206, 193, 0.3);
+}
+
+/*about us section */
+#about-us-section {
+    margin: 10vh 0 10vh 0 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2vw;
+}
+
+.images-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3vh;
+    background-color: lightgrey;
+}
+
+#about-us-section img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.p-content-right {
+    width: 100%;
+    max-width: 40vw;
+    margin: auto;
+    background-color: lightblue;
+}
+
