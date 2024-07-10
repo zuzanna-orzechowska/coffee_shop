@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 /*! animacja dla hover w menu https://youtu.be/UpJyCDEXEtc?si=xdm0SL9qVMKF8k0_ */
 /** kolory -> kolor kubka z logo #fee5cc / kolor ziarenek z kubka -> #ce6b09*/
+/*! ZROBIĆ WRAPPERA I ŻEBY TO MIAŁO JEDNAKOWY MARGINES*/
 
 * {
     margin: 0;
@@ -78,33 +79,31 @@ header nav ul a:hover:after {
     position: relative;
     min-height: 70vh;
     width: 100%;
-    padding-top: 10vh;
     background-image: linear-gradient(to bottom left, rgba(59, 45, 30, 0.6), rgba(151, 140, 128, 0.6)), url("/images/background-image.jpg");
     background-position: center 60%;
     background-repeat: no-repeat;
     background-size: cover;
     color: wheat;
+    padding-left: 10vw;
 }
 
 #header-bottom h1 {
-    font-size: 60px;
+    font-size: 90px;
     line-height: 1.8;
-    margin-left: 13vw;
     font-family: "Playwrite GB S", sans-serif;
 }
 
 #header-bottom q {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.6;
     font-style: italic;
-    margin-left: 16vw;
+    padding-left: 8vw;
     color: #fee5cc;
 }
 
 #header-bottom p {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1.6;
-    margin-left: 13vw;
 }
 
 #header-bottom-shop {
@@ -113,7 +112,7 @@ header nav ul a:hover:after {
 }
 
 #header-bottom-shop p {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold;
     color: #fee5cc;
 }
@@ -121,7 +120,7 @@ header nav ul a:hover:after {
 #header-bottom button {
     width: 100%;
     max-width: 1vw;
-    font-size: 28px;
+    font-size: 30px;
     border: none;
     background-color: transparent;
     transition: transform 0.55s ease;
@@ -149,9 +148,10 @@ header nav ul a:hover:after {
         font-size: 20px;
         gap: 4vh;
         background: rgba(245, 222, 178,0.4);
+        backdrop-filter: blur(9px);
         width: 100%;
         max-width: 20vw;
-        padding: 20px 0 20px 0;
+        padding: 20px 0;
         transition: all 0.5s ease-in-out;
     }
 
@@ -160,7 +160,7 @@ header nav ul a:hover:after {
     }
 
     #header-bottom h1 {
-        font-size: 44px;
+        font-size: 52px;
         margin-left: 8vw;
     }
     
@@ -185,6 +185,10 @@ header nav ul a:hover:after {
         max-width: 30vw;
         padding: 20px 0 15px 0;
         height: 30vh;
+    }
+
+    #header-bottom {
+        padding-left: 0;
     }
 
     #header-bottom h1 {
@@ -252,4 +256,5 @@ article {
     margin: auto;
     background-color: lightblue;
 }
+
 
