@@ -439,3 +439,31 @@ article {
         height: 4.5vh;
     }
 }
+
+/*cafeterias - map section*/ /*! TUTAJ O POROBIĆ*/
+#cafeterias-map-section {
+    margin: 5vh 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3vw;
+}
+
+#locations {
+    background: lightblue;
+    height: 5vh;
+    width: 100%;
+    max-width: 30vw;
+    margin: auto;
+    padding: 2vw;
+    background: rgba(254, 229, 204,0.3);
+    border-radius: 3px 60px;
+}
+
+
+#map {
+    background: lightcoral;
+    width: 100%;
+    max-width: 300px;
+    height: 5vh;
+    border-radius: 60px 3px;
+}
