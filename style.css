@@ -133,7 +133,7 @@ header nav ul a:hover:after {
 }
 
 /*@media for header*/
-@media (max-width: 945px) {
+@media (max-width: 985px) {
     #menu-icon {
         display: block;
         font-size: 30px;
@@ -185,7 +185,7 @@ header nav ul a:hover:after {
         gap: 2.5vh;
         max-width: 40vw;
         padding: 30px 0 20px 0;
-        height: 35vh;
+        height: 40vh;
     }
 
     #header-bottom {
