@@ -11,6 +11,7 @@
     <script defer src="app.js"></script>
     <!-- custom links-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <title>Cofove - love for coffee ☕❤️</title>
 </head>
@@ -23,8 +24,8 @@
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Cafeterias</a></li>
                 <li><a href="#">Delivery</a></li>
-                <li><a href="#">Shop</a></li>
                 <li><a href="#">Contact</a></li>
+                <li><a href="#">Shop</a></li>
             </ul>
         </nav>
         <i class="ri-menu-5-line" id="menu-icon" onclick="changeMenuIcon()"></i>
@@ -38,7 +39,7 @@
             <button type="button"><i class="ri-shopping-cart-2-fill"></i></button>
         </div>
     </div>
-
+<!--! TUTAJ ANIMACJE ŻE JAK SIE SCROLUJE TO TAK LADNIE SIE ZACZYNA POKAZYWAĆ TREŚĆ-->
     <article>
         <div class="section-cut"></div>
         <section id="about-us-section">
@@ -59,17 +60,35 @@
                 </div>
             </div>
         </section>
-        <section id="cafeterias-map-section">
-            <div id="locations">
-                <h1>Cafeterias - location</h1>
-                <h2>You can find us here:</h2>
-                <div class="finder"></div>
+        <section id="menu-slider-section">
+            <div class="left-text">
+                <h1>Menu</h1>
+                <p>text text text</p>
             </div>
-            <div id="map"></div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="/images/slider-frappe.jpg" alt="cup of choco frappe" title="Photo by Freepik">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/slider-iced-choco-latte.jpg" alt="iced choco latte" title="Photo by topntp26 on Freepik">
+                  </div>
+                  <div class="swiper-slide">Slide 3</div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            <!-- 
+            
+            <img src="images/slider-Martini-coffee.jpg" alt="Martini Coffee" title="Photo by Kamran Aydinov on Freepik">
+            -->
         </section>
         <section>
-            <hr>
-            <h3>Online Shop</h3>
         </section>
     </article>
     
@@ -80,5 +99,8 @@
         <p>Obraz na tej stronie został wygenerowany przy użyciu narzędzia AI. - NighCafe Studio</p>
         <a href="https://www.flaticon.com/free-icons/food" title="food icons">Food icons created by Freepik - Flaticon</a>
     </footer>
+
+    <!--custom scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
