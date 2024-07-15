@@ -67,26 +67,20 @@
             </div>
             <div class="swiper">
                 <div class="swiper-wrapper">
-                  <!-- Slides -->
                   <div class="swiper-slide">
-                    <img src="/images/slider-frappe.jpg" alt="cup of choco frappe" title="Photo by Freepik">
+                    <img src="/images/slider-caramel-frappe.jpg" alt="Caramel frappe" title="Image by chandlervid85 on Freepik">
                   </div>
                   <div class="swiper-slide">
-                    <img src="/images/slider-iced-choco-latte.jpg" alt="iced choco latte" title="Photo by topntp26 on Freepik">
+                    <img src="/images/slider-iced-latte.jpg" alt="Iced latte" title="Image by freepik">
                   </div>
-                  <div class="swiper-slide">Slide 3</div>
-                  ...
+                  <div class="swiper-slide">
+                    <img src="images/slider-brandy-coffee.jpg" alt="Brandy Cocktail coffee" title="Image by chandlervid85 on Freepik">
+                  </div>
                 </div>
-                <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
-              
-                <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-            <!-- 
-            
-            <img src="images/slider-Martini-coffee.jpg" alt="Martini Coffee" title="Photo by Kamran Aydinov on Freepik">
-            -->
+            </div>
         </section>
         <section>
         </section>
@@ -101,6 +95,26 @@
     </footer>
 
     <!--custom scripts-->
+    <!--SWIPER-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    const swiper = new Swiper('.swiper', {
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+    </script>
 </body>
 </html>
