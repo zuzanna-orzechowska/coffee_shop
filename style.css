@@ -538,53 +538,143 @@ article {
     background: black;
 }
 
+/*@media for "menu slider" section */
+@media (max-width: 1070px) {
+    #menu-slider-section {
+        column-gap: 2vw;
+    }
+
+    .left-text h1 {
+        font-size: 30px;
+        margin-bottom: 1vh;
+    }
+
+    .left-text h2 {
+        font-size: 20px;
+        margin-bottom: 1vh;
+    }
+
+    .left-text p, .drinks-list {
+        font-size: 16px;
+        margin-bottom: 2vh;
+    }
+
+    .left-text #drinks-list-p {
+        font-size: 18px;
+        margin-bottom: 1vh;
+    }
+
+    .drinks-menu-btn button {
+        font-size: 18px;
+    }
+
+    .swiper {
+        max-height: 50vh;
+    }
+}
+ /*! POPRAWIC TE RESPONSIVE BO COŚ DO DUPY WYGLĄDA */
+@media (max-width: 690px) {
+
+}
+
+
+/*
+
+@media (max-width: 690px) {
+    
+    .images-left img {
+        max-width: 280px;
+    }
+    
+    .p-content-right {
+        padding: 1.5vw;
+    }
+    
+    .p-content-right h1 {
+        font-size: 28px;
+        margin-bottom: 0.5vh;
+    }
+    
+    .p-content-right h2 {
+        font-size: 20px;
+        margin-bottom: 0.5vh;
+    }
+    
+    .p-content-right span {
+        font-size: 24px;
+    }
+    
+    .p-content-right p {
+        font-size: 14px;
+        margin-bottom: 1.5vh;
+    }
+    
+    .menu-shop-buttons button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 595px) {
+    #about-us-section {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 5vh;
+    }
+    
+    .images-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3vh;
+    }
+    
+    .images-left img {
+        max-width: 300px;
+    }
+
+    .images-left img:first-of-type {
+        margin-right: 10vw;
+    }
+
+    .images-left img:last-of-type {
+        margin-left: 10vw;
+    }
+    
+    .p-content-right {
+        max-width: 80vw;
+    }
+    
+    .p-content-right h1 {
+        font-size: 30px;
+        margin-bottom: 1vh;
+    }
+    
+    .p-content-right h2 {
+        font-size: 20px;
+        margin-bottom: 1vh;
+    }
+    
+    .p-content-right span {
+        font-size: 24px;
+    }
+    
+    .p-content-right p {
+        font-size: 16px;
+        margin-bottom: 1.5vh;
+    }
+    
+    .menu-shop-buttons {
+        gap: 4vw;
+    }
+    
+    .menu-shop-buttons button {
+        font-size: 18px;
+        max-width: 16vw;
+        height: 4.5vh;
+    }
+}*/
+
 section:last-of-type {
     margin-top: 10vh;
 }
-
-/*
-.images-left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 5vh;
-}
-
-.images-left img {
-    width: 100%;
-    max-width: 450px;
-    border-radius: 60px 3px;
-}
-
-.p-content-right {
-    width: 100%;
-    max-width: 30vw;
-    margin: auto;
-    padding: 2vw;
-    background: rgba(254, 229, 204,0.3);
-    border-radius: 3px 60px;
-}
-
-.p-content-right h1 {
-    font-size: 50px;
-    margin-bottom: 3vh;
-    text-decoration: underline;
-}
-
-.p-content-right h2 {
-    font-size: 30px;
-    margin-bottom: 2vh;
-}
-
-.p-content-right span {
-    color: wheat;
-    font-family: "Playwrite GB S", sans-serif;
-    font-size: 33px;
-    text-shadow: 3px 3px black;
-}
-
-.p-content-right p {
-    font-size: 20px;
-    margin-bottom: 4vh;
-}*/
