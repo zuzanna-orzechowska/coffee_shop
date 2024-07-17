@@ -438,28 +438,56 @@ article {
 }
 
 /*@media for "about us" section*/
-@media (max-width: 1070px) {
+@media (max-width: 1250px) {
     #about-us-section {
-        margin: 11vh 0;
-        column-gap: 0.5vw;
+       column-gap: 4vw;
     }
-    
-    .images-left {
-        gap: 10vh;
+
+    .images-left img {
+        max-width: 400px;
     }
-    
+
+    .p-content-right {
+        max-width: 35vw;
+    }
+
+    .p-content-right h1 {
+        font-size: 35px;
+        margin-bottom: 0.2vh;
+        line-height: 1;
+    }
+
+    .p-content-right h2 {
+        font-size: 25px;
+        margin-bottom: 0.2vh;
+    }
+
+    .p-content-right span {
+        font-size: 28px;
+    }
+
+    .p-content-right p {
+        font-size: 18px;
+        margin-bottom: 1.5vh;
+    }
+
+    .menu-shop-buttons button {
+        font-size: 20px;
+        height: 4.5vh;
+    }
+}
+
+@media (max-width: 1000px) {
     .images-left img {
         max-width: 350px;
     }
     
     .p-content-right h1 {
         font-size: 30px;
-        margin-bottom: 1vh;
     }
     
     .p-content-right h2 {
         font-size: 20px;
-        margin-bottom: 1vh;
     }
     
     .p-content-right span {
@@ -468,49 +496,15 @@ article {
     
     .p-content-right p {
         font-size: 16px;
-        margin-bottom: 2vh;
     }
     
     .menu-shop-buttons button {
         font-size: 18px;
+        height: 4vh;
     } 
 }
 
-@media (max-width: 690px) {
-    
-    .images-left img {
-        max-width: 280px;
-    }
-    
-    .p-content-right {
-        padding: 1.5vw;
-    }
-    
-    .p-content-right h1 {
-        font-size: 28px;
-        margin-bottom: 0.5vh;
-    }
-    
-    .p-content-right h2 {
-        font-size: 20px;
-        margin-bottom: 0.5vh;
-    }
-    
-    .p-content-right span {
-        font-size: 24px;
-    }
-    
-    .p-content-right p {
-        font-size: 14px;
-        margin-bottom: 1.5vh;
-    }
-    
-    .menu-shop-buttons button {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 595px) {
+@media (max-width: 845px) {
     #about-us-section {
         display: flex;
         flex-direction: column-reverse;
@@ -568,6 +562,13 @@ article {
         font-size: 18px;
         max-width: 16vw;
         height: 4.5vh;
+    }
+}
+
+@media (max-width: 460px) {
+    .menu-shop-buttons button {
+        font-size: 16px;
+        max-width: 18vw;
     }
 }
 
