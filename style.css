@@ -827,6 +827,28 @@ article {
     }
 }
 
-section:last-of-type {
-    margin-top: 10vh;
+/*delivery section styling */
+#delivery-section {
+    margin: 10vh 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3vw;
+}
+/*! COO SIE TUTAJ WYPRAWIA :<*/
+.left-delivery-img {
+    display: flex;
+    flex-direction: column;
+    background: lightblue;
+    gap: 4vh;
+}
+
+ /*! TUTAJ ŻEBY TO JAKIEŚ JEDNAKOWE BYŁO LUL*/
+.delivery-logo-btn img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 60px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
 }
