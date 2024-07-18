@@ -380,6 +380,7 @@ article {
     width: 100%;
     max-width: 450px;
     border-radius: 60px 3px;
+    border: 0.5px black solid;
 }
 
 .p-content-right {
@@ -520,7 +521,7 @@ article {
     }
     
     .images-left img {
-        max-width: 300px;
+        max-width: 420px;
     }
 
     .images-left img:first-of-type {
@@ -536,12 +537,10 @@ article {
     }
     
     .p-content-right h1 {
-        font-size: 30px;
         margin-bottom: 1vh;
     }
     
     .p-content-right h2 {
-        font-size: 20px;
         margin-bottom: 1vh;
     }
     
@@ -550,7 +549,6 @@ article {
     }
     
     .p-content-right p {
-        font-size: 16px;
         margin-bottom: 1.5vh;
     }
     
@@ -565,10 +563,24 @@ article {
     }
 }
 
+@media (max-width: 550px) {
+    .images-left img {
+        max-width: 380px;
+    }
+}
+
 @media (max-width: 460px) {
     .menu-shop-buttons button {
         font-size: 16px;
         max-width: 18vw;
+    }
+
+    .images-left img {
+        max-width: 340px;
+    }
+
+    .images-left img:first-of-type {
+        margin-right: 0;
     }
 }
 
@@ -650,8 +662,10 @@ article {
     width: 100%;
     max-width: 30vw;
     height: 100%;
-    max-height: 70vh;
+    max-height: 55vh;
     margin: auto;
+    border-radius: 3px 60px;
+    border: 0.5px black solid;
    /* box-shadow: 5px 9px 80px -12px rgba(245, 222, 179, 1); */ /** TUTAJ ŻEBY JAKOS TO WYGLADAŁO*/
 }
 
@@ -671,141 +685,147 @@ article {
 }
 
 /*@media for "menu slider" section */
-@media (max-width: 1070px) {
+@media (max-width: 1330px) {
     #menu-slider-section {
-        column-gap: 2vw;
+        column-gap: 5vw;
+    }
+}
+
+@media (max-width: 1250px) {
+    #menu-slider-section {
+        column-gap: 2.5vw;
+    }
+
+    .left-text {
+        max-width: 35vw;
     }
 
     .left-text h1 {
-        font-size: 30px;
-        margin-bottom: 1vh;
+        font-size: 35px;
+        margin-bottom: 1.5vh;
+        line-height: 1;
     }
 
     .left-text h2 {
-        font-size: 20px;
-        margin-bottom: 1vh;
+        font-size: 25px;
+        margin-bottom: 0.2vh;
     }
 
     .left-text p, .drinks-list {
-        font-size: 16px;
-        margin-bottom: 2vh;
+        font-size: 18px;
+        margin-bottom: 1.5vh;
     }
 
     .left-text #drinks-list-p {
-        font-size: 18px;
-        margin-bottom: 1vh;
+        font-size: 20px;
+        margin-bottom: 1.5vh;
     }
 
     .drinks-menu-btn button {
-        font-size: 18px;
+        font-size: 20px;
+        height: 4.5vh;
     }
 
     .swiper {
         max-height: 50vh;
     }
 }
- /*! POPRAWIC TE RESPONSIVE BO COŚ DO DUPY WYGLĄDA */
-@media (max-width: 690px) {
 
-}
-
-
-/*
-
-@media (max-width: 690px) {
-    
-    .images-left img {
-        max-width: 280px;
+@media (max-width: 1000px) {
+    #menu-slider-section {
+        column-gap: 4.5vw;
     }
-    
-    .p-content-right {
-        padding: 1.5vw;
+
+    .left-text h1 {
+        font-size: 30px;
     }
-    
-    .p-content-right h1 {
-        font-size: 28px;
-        margin-bottom: 0.5vh;
-    }
-    
-    .p-content-right h2 {
+
+    .left-text h2 {
         font-size: 20px;
-        margin-bottom: 0.5vh;
     }
-    
-    .p-content-right span {
-        font-size: 24px;
-    }
-    
-    .p-content-right p {
-        font-size: 14px;
-        margin-bottom: 1.5vh;
-    }
-    
-    .menu-shop-buttons button {
+
+    .left-text p, .drinks-list {
         font-size: 16px;
     }
+
+    .left-text #drinks-list-p {
+        font-size: 18px;
+    }
+
+    .drinks-menu-btn button {
+        font-size: 18px;
+        height: 4vh;
+    } 
+
+    .swiper {
+        max-width: 35vw;
+    }
 }
 
-@media (max-width: 595px) {
-    #about-us-section {
+@media (max-width: 950px) {
+    #menu-slider-section {
+        column-gap: 5.5vw;
+    }
+}
+
+@media (max-width: 900px) {
+    #menu-slider-section {
+        column-gap: 6.5vw;
+    }
+}
+
+@media (max-width: 845px) {
+    #menu-slider-section {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: 5vh;
     }
-    
-    .images-left {
+
+    .left-text {
+        max-width: 80vw;
+    }
+
+    .left-text h1 {
+        margin-bottom: 1vh;
+    }
+
+    .left-text h2 {
+        margin-bottom: 1vh;
+    }
+
+    .left-text p, .drinks-list {
+        margin-bottom: 1.5vh;
+    }
+
+    .drinks-list {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 3vh;
-    }
-    
-    .images-left img {
-        max-width: 300px;
     }
 
-    .images-left img:first-of-type {
-        margin-right: 10vw;
-    }
-
-    .images-left img:last-of-type {
-        margin-left: 10vw;
-    }
-    
-    .p-content-right {
-        max-width: 80vw;
-    }
-    
-    .p-content-right h1 {
-        font-size: 30px;
-        margin-bottom: 1vh;
-    }
-    
-    .p-content-right h2 {
-        font-size: 20px;
-        margin-bottom: 1vh;
-    }
-    
-    .p-content-right span {
-        font-size: 24px;
-    }
-    
-    .p-content-right p {
-        font-size: 16px;
-        margin-bottom: 1.5vh;
-    }
-    
-    .menu-shop-buttons {
-        gap: 4vw;
-    }
-    
-    .menu-shop-buttons button {
+    .drinks-menu-btn button {
         font-size: 18px;
         max-width: 16vw;
         height: 4.5vh;
     }
-}*/
+
+    .swiper {
+        max-width: 45vw;
+        max-height: 52vh;
+    }
+}
+
+@media (max-width: 460px) {
+    .drinks-menu-btn button {
+        font-size: 16px;
+        max-width: 18vw;
+    }
+
+    .swiper {
+        max-width: 65vw;
+        max-height: 52vh;
+    }
+}
 
 section:last-of-type {
     margin-top: 10vh;
