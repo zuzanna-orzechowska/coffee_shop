@@ -832,23 +832,14 @@ article {
     margin: 10vh 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 3vw;
-}
-/*! COO SIE TUTAJ WYPRAWIA :<*/
-.left-delivery-img {
-    display: flex;
-    flex-direction: column;
-    background: lightblue;
-    gap: 4vh;
+    column-gap: 4vw;
 }
 
- /*! TUTAJ ŻEBY TO JAKIEŚ JEDNAKOWE BYŁO LUL*/
-.delivery-logo-btn img {
+.right-text {
     width: 100%;
-    max-width: 400px;
-    border-radius: 60px 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid black;
+    max-width: 30vw;
+    margin: auto;
+    padding: 2vw;
+    background: rgba(254, 229, 204,0.3);
+    border-radius: 3px 60px;
 }
