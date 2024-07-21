@@ -835,6 +835,21 @@ article {
     column-gap: 4vw;
 }
 
+.delivery-img-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.delivery-img-left img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 60px 3px;
+    border: 0.5px black solid;
+}
+
 .right-text {
     width: 100%;
     max-width: 30vw;
@@ -842,4 +857,70 @@ article {
     padding: 2vw;
     background: rgba(254, 229, 204,0.3);
     border-radius: 3px 60px;
+}
+
+.right-text h1 {
+    font-size: 50px;
+    margin-bottom: 3vh;
+    text-decoration: underline;
+}
+
+.right-text h2 {
+    font-size: 30px;
+    margin-bottom: 2vh;
+}
+
+.right-text p, .right-text ul {
+    font-size: 20px;
+    margin-bottom: 4vh
+}
+
+.delivery-list ul {
+    list-style: none;
+}
+
+.delivery-list ul li {
+    display: flex;
+    align-items: center;
+}
+
+.delivery-list ul li:not(:last-of-type) {
+    margin-bottom: 1vh;
+}
+
+.delivery-list ul #first-step::before {
+    content: url("images/first-step-icon.png");
+    margin-right: 10px;
+}
+
+.delivery-list ul #second-step::before {
+    content: url("images/second-step-icon.png");
+    margin-right: 10px;
+}
+
+.delivery-list ul #third-step::before {
+    content: url("images/third-step-icon.png");
+    margin-right: 10px;
+}
+
+.delivery-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.right-text button {
+    font-size: 22px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 8vw;
+    height: 5.5vh;
+    font-weight: 700;
+    border: 2px solid black;
+    background-color: rgba(254, 229, 204,0.3);
+    transition: background-color 0.5s ease;
+}
+
+.right-text button:hover {
+    background-color: #fee5cc;
+    cursor: pointer;
 }
