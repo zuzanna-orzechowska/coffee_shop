@@ -1049,14 +1049,15 @@ article {
 }
 
 /*styling for footer*/
-footer {
-    padding-top: 10vh;
+footer:not(.footer-img-info) {
     background: rgba(254, 229, 204,0.3);
 }
 
 .footer-wrapper {
+    padding: 5vh 0;
     display: flex;
-    justify-content: space-evenly;
+    gap: 16vh;
+    justify-content: center;
 }
 
 .footer-wrapper h2 {
@@ -1065,7 +1066,7 @@ footer {
     text-decoration: underline;
 }
 
-.footer-wrapper p {
+.footer-wrapper p, .footer-wrapper a {
     font-size: 16px;
 }
 
@@ -1094,11 +1095,53 @@ footer {
     align-items: center;
 }
 
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.links a {
+    color: black;
+}
+
+.links a:hover {
+    color: #ce6b09;
+}
+
+.footer-connect {
+    width: 100%;
+    max-width: 13vw;
+}
+
+.footer-connect p {
+    margin-bottom: 1vh;
+}
+
+.footer-connect form {
+    margin-bottom: 1vh;
+}
+
+.footer-connect button {
+    border: 1px solid black;
+    border-radius: 6px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 3vw;
+}
+
+.footer-connect button:hover {
+    cursor: pointer;
+}
+
+.footer-connect-img {
+    display: flex;
+    gap: 0.5vw;
+}
+
 .footer-img-info {
-    margin-top: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background: rgba(206, 107, 9, 0.9);
+    background: wheat;
 }
