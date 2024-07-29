@@ -105,32 +105,39 @@ header nav ul a:hover:after {
     line-height: 1.6;
 }
 
-#header-bottom-shop {
+.header-bottom-shop {
     display: flex;
-    gap: 1.5vw;
-}
-
-#header-bottom-shop p {
-    font-size: 28px;
-    font-weight: bold;
-    color: #fee5cc;
-}
-
-#header-bottom button {
+    justify-content: flex-end;
     width: 100%;
-    max-width: 1vw;
-    font-size: 30px;
-    border: none;
-    background-color: transparent;
-    transition: transform 0.55s ease;
+    max-width: 35vw;
 }
 
-#header-bottom button:hover {
+.header-bottom-shop button {
+    width: 100%;
+    max-width: 10vw;
+    font-size: 25px;
+    border-radius: 60px 3px;
+    height: 5.5vh;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 16px;
+    background-color: rgba(254, 229, 204,0.3);
+    transition: background-color 0.5s ease;
+    margin-top: 1vh;
+}
+
+.header-bottom-shop button:hover {
+    background-color: rgba(254, 229, 204,0.7);
     cursor: pointer;
-    transform: scale(1.5);
 }
 
 /*@media for header*/
+@media (max-width: 1330px) {
+    .header-bottom-shop {
+        max-width: 52vw;
+    }
+}
+
 @media (max-width: 1250px) {
     #logo {
         max-width: 90px;
@@ -143,9 +150,13 @@ header nav ul a:hover:after {
     }
 
     header nav ul {
+        display: none;
+    }
+
+    .nav-open {
         position: absolute;
         top: 80%;
-        right: -100%; /*right: 0; żeby było widać */
+        right: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -160,26 +171,17 @@ header nav ul a:hover:after {
         border-radius: 60px 3px;
     }
 
-    .nav-open {
-        right: 0;
-    }
 
     #header-bottom h1 {
         font-size: 78px;
-        margin-left: 4vw;
-    }
-    
-    #header-bottom q {
-        margin-left: 6vw;
     }
 
     #header-bottom p {
         font-size: 26px;
-        margin-left: 4vw;
     }
     
-    #header-bottom button:hover {
-        transform: scale(1.3);
+    .header-bottom-shop button {
+        font-size: 22px;
     }
 }
 
@@ -210,17 +212,14 @@ header nav ul a:hover:after {
 
     #header-bottom h1 {
         font-size: 66px;
-        margin-left: 8vw;
     }
     
     #header-bottom q {
         font-size: 20px;
-        margin-left: 12vw;
     }
 
     #header-bottom p {
         font-size: 24px;
-        margin-left: 8vw;
     }
     
     #header-bottom button:hover {
@@ -307,17 +306,12 @@ header nav ul a:hover:after {
         padding-bottom: 12vh;
     }
 
-    #header-bottom h1 {
-        margin-left: 4vw;
-    }
     
     #header-bottom q {
-        margin-left: 6vw;
         font-size: 16px;
     }
 
     #header-bottom p {
-        margin-left: 4vw;
         font-size: 18px;
     }
     
@@ -331,6 +325,7 @@ header nav ul a:hover:after {
     background-size: cover;
     background-position: center;
 }
+
 
 @media (max-width: 1250px) {
     .section-cut {
