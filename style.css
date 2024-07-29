@@ -21,12 +21,11 @@ header {
     position: absolute;
     z-index: 1;
     padding: 3vh 3vh 0 3vh;
-    font-size: 20px;
 }
 
 #logo {
     width: 100%;
-    max-width: 80px;
+    max-width: 90px;
     margin-left: 2vw;
 }
 
@@ -39,7 +38,7 @@ header nav ul {
 }
 
 header nav ul:last-of-type {
-    margin-right: 4vw;
+    margin-right: 2vw;
 }
 
 header nav ul a {
@@ -75,10 +74,10 @@ header nav ul a:hover:after {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
+   /* position: relative;*/
     min-height: 75vh;
     width: 100%;
-    background-image: linear-gradient(to bottom left, rgba(59, 45, 30, 0.6), rgba(151, 140, 128, 0.6)), url("/images/background-image.jpg");
+    background-image: linear-gradient(to bottom left, rgba(59, 45, 30, 0.5), rgba(151, 140, 128, 0.6)), url("/images/background-image.jpg");
     background-position: center 60%;
     background-repeat: no-repeat;
     background-size: cover;
