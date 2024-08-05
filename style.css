@@ -417,9 +417,118 @@ footer {
 }
 
 @media (max-width: 985px) {
+    .footer-icon img {
+        padding-top: 3vh;
+        margin-bottom: 0;
+    }
+
     footer, .footer-wrapper {
         display: flex;
         flex-direction: column;
+    }
+
+    footer {
+        gap: 0;
+    }
+
+    .footer-wrapper {
+        gap: 4vh;
+    }
+
+    footer h2 {
+        text-align: center;
+    }
+
+    .footer-open-hours .day-hour {
+        gap: 8vw;
+        justify-content: center;
+    }
+
+    .footer-open-hours, .footer-quick-links, .footer-support, .footer-connect {
+        width: 100%;
+        max-width: 40vw;
+    }
+
+    .links {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    .footer-connect {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-connect form input {
+        max-width: 16vw;
+    }
+
+    .footer-connect button {
+        max-width: 6vw;
+    }
+
+    .footer-connect-img {
+        gap: 2vw;
+    }
+}
+
+@media (max-width: 965px) {
+    .footer-open-hours, .footer-quick-links, .footer-support, .footer-connect {
+        max-width: 60vw;
+    }
+}
+
+@media (max-width: 830px) {
+    .footer-icon img {
+        max-width: 13vw;
+    }
+
+    .footer-connect form input {
+        max-width: 20vw;
+    }
+}
+
+@media (max-width: 675px) {
+    .footer-icon img {
+        max-width: 15vw;
+    }
+
+    .footer-open-hours, .footer-quick-links, .footer-support, .footer-connect {
+        max-width: 80vw;
+    }
+
+    .footer-connect form input {
+        max-width: 26vw;
+    }
+
+    .footer-connect button {
+        max-width: 8vw;
+    }
+}
+
+@media (max-width: 520px) {
+    .footer-icon img {
+        max-width: 18vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-icon img {
+        max-width: 20vw;
+    }
+
+    .footer-open-hours, .footer-quick-links, .footer-support, .footer-connect {
+        max-width: 90vw;
+    }
+
+    .footer-connect form input {
+        max-width: 34vw;
+    }
+
+    .footer-connect button {
+        max-width: 10vw;
     }
 }
 
