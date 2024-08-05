@@ -194,6 +194,13 @@ header nav ul a:hover:after {
     background-position: center;
 }
 
+.section-cut:first-of-type {
+    margin-bottom: 10vh;
+}
+
+.section-cut:nth-of-type(2) {
+    margin-top: 10vh;
+}
 
 @media (max-width: 1250px) {
     .section-cut {
@@ -211,7 +218,35 @@ header nav ul a:hover:after {
     .section-cut {
         height: 4vh;
     }
+
+    .section-cut:first-of-type {
+        margin-bottom:0;
+    }
+    
+    .section-cut:nth-of-type(2) {
+        margin-top: 0;
+    }
 }
+
+/*styling for scroll animation */
+.hidden {
+    opacity: 0;
+    filter: blur(6px);
+    transform: scale(0.5);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+}
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+  }
 
 /*styling for footer*/
 footer:not(.footer-img-info) {

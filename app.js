@@ -25,3 +25,19 @@ document.addEventListener('DOMContentLoaded', function() { //when website is ful
     //when changing the width of the website
     window.addEventListener('resize', resizeImages);
 });
+
+//scroll animation -> yt https://youtu.be/T33NN_pPeNI?si=EdLCjHGy0Yx60CrS
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } else {
+            entry.target.classList.remove("show");
+        }
+    });
+});
+
+const hiddenEl = document.querySelectorAll(".hidden");
+
+hiddenEl.forEach((el) => observer.observe(el));

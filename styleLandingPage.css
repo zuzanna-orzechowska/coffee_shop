@@ -181,7 +181,7 @@ article {
 
 /*about us section */
 #about-us-section {
-    margin-top: 10vh;
+    margin: 10vh 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 3vw;
@@ -405,7 +405,7 @@ article {
 
 /*menu slider section*/
 #menu-slider-section {
-    margin-top: 10vh;
+    margin: 10vh 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 3vw;
