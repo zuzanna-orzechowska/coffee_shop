@@ -218,6 +218,13 @@ footer:not(.footer-img-info) {
     background: rgba(254, 229, 204,0.3);
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7vw;
+}
+
 .footer-wrapper {
     padding: 5vh 0;
     display: flex;
@@ -243,7 +250,7 @@ footer:not(.footer-img-info) {
 
 .footer-icon img {
     width: 100%;
-    max-width: 7vw;
+    max-width: 9vw;
     margin-bottom: 1vh;
 }
 
@@ -386,27 +393,37 @@ footer:not(.footer-img-info) {
 
 @media (max-width: 1190px) {
     .footer-icon img {
-        max-width: 9vw;
-    }
+        max-width: 10vw;
+    }       
 
-    /*.footer-wrapper:not(.footer-icon) {
-        width: 100%;
+    .footer-wrapper {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 5vh;
-    }*/
+        grid-template-columns: repeat(2,30vw);
+        gap: 2.5vh;
+    }
 
     .footer-open-hours .day-hour {
         display: flex;
         gap: 5vw;
     }
 
-    /*.footer-quick-links{
-        margin: auto;
-    }*/
+    .footer-connect {
+        max-width: 20vw;
+    }
+
+    .footer-connect form input {
+        max-width: 13vw;
+    }
 }
 
-@media (max-width: 970px) {
+@media (max-width: 985px) {
+    footer, .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*@media (max-width: 970px) {
     .footer-wrapper {
         display: grid;
         gap: 3vw;   
@@ -430,7 +447,7 @@ footer:not(.footer-img-info) {
     .footer-icon img {
         max-width: 10vw;
     }
-/*! TUTAJ DOKOŃCZYC BO SIE ZDUPIA*/
+/*! TUTAJ DOKOŃCZYC BO SIE ZDUPIA
     .links {
         flex-direction: row;
     }
@@ -439,4 +456,4 @@ footer:not(.footer-img-info) {
         width: 100%;
         max-width: 80vw;
     }
-}
+}*/
