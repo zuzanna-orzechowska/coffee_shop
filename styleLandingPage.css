@@ -451,7 +451,7 @@ article {
 }
 
 .drinks-list ul li::before {
-    content: url("images/drink-ul.png");
+    content: url("coffee-shop/images/drink-ul.png");
     margin-right: 10px;
 }
 
