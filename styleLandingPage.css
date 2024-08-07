@@ -9,7 +9,7 @@
    /* position: relative;*/
     min-height: 75vh;
     width: 100%;
-    background-image: linear-gradient(to bottom left, rgba(59, 45, 30, 0.5), rgba(151, 140, 128, 0.6)), url("/images/background-image.jpg");
+    background-image: linear-gradient(to bottom left, rgba(59, 45, 30, 0.5), rgba(151, 140, 128, 0.6)), url("images/background-image.jpg");
     background-position: center 60%;
     background-repeat: no-repeat;
     background-size: cover;
