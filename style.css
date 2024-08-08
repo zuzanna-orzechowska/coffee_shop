@@ -103,7 +103,7 @@ header nav ul a:hover:after {
     #header-bottom {
         padding-left: 0;
         align-items: center;
-        padding-top: 30vh;
+        padding-top: 10vh;
         background-position: center 85%;
     }
 }
@@ -194,13 +194,13 @@ header nav ul a:hover:after {
     background-position: center;
 }
 
-.section-cut:first-of-type {
+/*.section-cut:first-of-type {
     margin-bottom: 10vh;
 }
 
 .section-cut:nth-of-type(2) {
     margin-top: 10vh;
-}
+}*/
 
 @media (max-width: 1250px) {
     .section-cut {

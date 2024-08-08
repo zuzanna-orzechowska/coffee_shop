@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() { //when website is ful
 //scroll animation -> yt https://youtu.be/T33NN_pPeNI?si=EdLCjHGy0Yx60CrS
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
+        //console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add("show");
         };
