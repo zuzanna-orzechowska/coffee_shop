@@ -1,3 +1,4 @@
+// changing menu icon
 let menu = document.getElementById("menu-icon");
 let navListUl = document.getElementById("ul-menu");
 
@@ -6,6 +7,12 @@ function changeMenuIcon() {
     menu.classList.toggle("ri-close-large-line");
     navListUl.classList.toggle("nav-open");
 };
+
+// event listeners for buttons
+const cafeteriasBtn = document.getElementById("cafeterias-btn");
+cafeteriasBtn.addEventListener("click", () => {
+    window.location.open("cafeterias-map.html");
+});
 
 // resizing image - slider (so img will take whole space of div element)
 document.addEventListener('DOMContentLoaded', function() { //when website is fully loaded

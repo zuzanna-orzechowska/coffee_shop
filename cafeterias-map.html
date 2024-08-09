@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zuzanna Orzechowska">
+    <!--!!! TUTAJ DOPISAĆ OPIS-->
+    <meta name="description" content="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesCafeteriasPage.css">
+    <link rel="icon" type="image/x-icon" href="images/coffee-cup-logo.png">
+    <script defer src="app.js"></script>
+    <title>Cafeterias | Cofove ☕❤️</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/coffee-cup-logo.png" alt="cup of coffee with two coffee beans" id="logo" title="Home page"></a>
+        <nav>
+            <ul id="ul-menu">
+                <!--DODAĆ LINKI DO OSOBNYCH STRON-->
+                <li><a href="#about-us-section">About Us</a></li>
+                <li><a href="#menu-slider-section">Menu</a></li>
+                <li><a href="#delivery-section">Delivery</a></li> <!--TUTAJ PRZECHODZI DO SEKCJI NA STRONIE-->
+                <li><a href="#">Contact</a></li> <!--TUTAJ PRZECHODZI DO STOPKI-->
+                <li><a href="cafeterias-map.html">Cafeterias</a></li> <!--TUTAJ PRZECHODZI DO ODZIELNEJ STRONY-->
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </nav>
+        <i class="ri-menu-5-line" id="menu-icon" onclick="changeMenuIcon()"></i>
+    </header>
+
+    <div class="map-wrapper">
+    <gmp-map id="map" center="40.715589099555835, -74.01265195125747"
+    zoom="14"
+    >
+        <gmp-advanced-marker
+        position="37.4220656,-122.0840897"
+        title="Mountain View, CA"></gmp-advanced-marker>
+        <gmp-advanced-marker
+        position="47.648994,-122.3503845"
+        title="Seattle, WA"></gmp-advanced-marker>
+    </gmp-map>
+    <!--ABY WATERMARK ZNIKNĄŁ TO MAP ID WYDUPIĆ map-id="41c024922768408"-->
+    <script src="mapApp.js"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9Jvu3tdntwYmt1HLImRVqiUMlsB5JrMw&loading=async&libraries=maps&v=beta" defer>
+    </script>
+    </div>
+
+    <footer>
+        <div class="footer-icon">
+            <a href="#logo"><img src="images/coffee-cup-logo.png" alt="Cofove logo" title="Go up"></a>
+            <h1>Cofove</h1>
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer-open-hours">
+                <h2>Opening hours</h2>
+                <div class="day-hour">
+                    <div class="day">
+                        <p>Monday</p>
+                        <p>Tuesday</p>
+                        <p>Wednesday</p>
+                        <p>Thursday</p>
+                        <p>Friday</p>
+                        <p>Saturday</p>
+                        <p>Sunday</p>
+                    </div>
+                    <div class="hour">
+                        <p>8:00AM - 7:30PM</p>
+                        <p>8:00AM - 7:30PM</p>
+                        <p>8:00AM - 7:30PM</p>
+                        <p>8:00AM - 7:30PM</p>
+                        <p>9:00AM - 8:30PM</p>
+                        <p>9:00AM - 6:00PM</p>
+                        <p>10:00AM - 6:00PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-quick-links">
+                <h2>Quick links</h2>
+                <!--! DODAĆ LINKI-->
+                <div class="links">
+                    <a href="">About us</a>
+                    <a href="">Menu</a>
+                    <a href="">Cafeterias</a>
+                    <a href="">Delivery</a>
+                    <a href="">Contact</a>
+                    <a href="">Shop</a>
+                </div>
+            </div>
+            <div class="footer-support">
+                <h2>Support</h2>
+                <div class="links">
+                    <!--!LINKI -->
+                    <a href="">Contact</a>
+                    <a href="">FAQ </a>
+                    <a href="">Attribution</a> <!--TUTAJ LINKI I COS SKAD SIE BRAŁO ZDJĘCIA-->
+                    <!---
+                    <a href="https://www.flaticon.com/free-icons/food" title="food icons">Food icons created by Freepik - Flaticon</a> -->
+                </div>
+            </div>
+            <div class="footer-connect">
+                <h2>Connect with us</h2>
+                <p>Sign up for exclusive offers and first access to the latest news</p>
+                <!--! TUTAJ ZMIENIC NA COŚ W PHP do action-->
+                <form action="mailto:strony.zuzanny@gmail.com" method="post" autocomplete="off">
+                    <input type="email" placeholder="Enter your e-mail">
+                    <button type="submit">Send</button>
+                </form>
+                <div class="footer-connect-img">
+                    <!--! DODAĆ LINKI-->
+                   <a href=""><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+                   <a href=""><img src="images/instagram-logo.png" alt="Instagram logo"></a>
+                   <a href=""><img src="images/linkedin-logo.png" alt="Linkedin logo"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <div class="footer-img-info">
+            <h6>Made with ❤️ by Zuza</h6>
+        </div>
+</body>
+</html>
