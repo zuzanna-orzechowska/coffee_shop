@@ -18,7 +18,7 @@ async function initMap() {
   const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker");
 
   map = new Map(document.getElementById("map"), {
-    zoom: 16,
+    zoom: 13,
     center: position,
     mapId: "41c024922768408",
   });
@@ -35,7 +35,32 @@ async function initMap() {
     [
       40.71421340552574,
       -74.00369659684144,
-      "52 Duane St floor 7, New York"
+      "52 Duane St floor 7, New York",
+    ],
+    [
+      40.7141640984682, 
+      -73.98038810598143,
+      "Top Floor, 551 Grand St, New York"
+    ],
+    [
+      40.69667158212301, 
+      -73.99769590519885,
+      "Montague St &, Pierrepont Pl, Brooklyn"
+    ],
+    [
+      40.71903776793416, 
+      -74.05282025951381,
+      "420 Grand St, Jersey City"
+    ],
+    [
+      40.75036988927183,
+      -74.0362621939909,
+      "900 Madison St, Hoboken"
+    ],
+    [
+      40.63707094554077, 
+      -73.92680518212697,
+      "5200 Kings Hwy Ste A, Brooklyn"
     ]
   ];
 
@@ -43,14 +68,17 @@ async function initMap() {
     const currentMarker = markers[i]
 
     const location = { lat: currentMarker[0], lng: currentMarker[1] };
+    const img = cofoveImg.cloneNode();
+
     const marker = new AdvancedMarkerElement({
       map: map,
       position: location,
-      content: cofoveImg,
+      content: img  ,
       title: currentMarker[2],
       gmpClickable: true,
     });
-    
+  
+    console.log("Marker został dodany do mapy:", marker);
     const infoWindow = new InfoWindow();
     marker.addListener("click", ({domEvent, latLng}) => {
       const { target } = domEvent;
@@ -65,9 +93,8 @@ async function initMap() {
       content.classList.remove("drop");
       content.style.opacity = "1";
     });
-    const time = 0.5 + Math.random(); // 0.5s delay for easy to see the animation
   
-    content.style.setProperty("--delay-time", time + "s");
+    content.style.setProperty("--delay-time", "0s");
     intersectionObserver.observe(content);
   };
 }
