@@ -27,10 +27,7 @@ async function initMap() {
   const cofoveImg = document.createElement("img");
   cofoveImg.src = "images/coffee-pin.png"; // <a href="https://www.freepik.com/icon/location_2007613#fromView=search&page=1&position=1&uuid=1300a385-6575-4567-a0b7-6fffc11ec43d">Icon by Freepik</a>
 
-  // lat
-  // lng
-  // title
-  //! DODAĆ KOLEJNE
+  // lat / lng / title
   const markers = [
     [
       40.71421340552574,
@@ -78,7 +75,7 @@ async function initMap() {
       gmpClickable: true,
     });
   
-    console.log("Marker został dodany do mapy:", marker);
+   // console.log("Marker został dodany do mapy:", marker);
     const infoWindow = new InfoWindow();
     marker.addListener("click", ({domEvent, latLng}) => {
       const { target } = domEvent;

@@ -2,8 +2,13 @@
 /**! TUTAJ POPRAWIĆ*/
 #menu-icon {
     display: block;
-    font-size: 40px;
+    font-size: 50px;
     margin-right: 2vw;
+    color: wheat;
+}
+
+#logo {
+  max-width: 100px;
 }
 
 header nav ul {
@@ -43,6 +48,48 @@ header nav ul {
         height: 45vh;
         border-radius: 3px 60px;
     }
+}
+
+@media (max-width: 700px) {
+  #logo {
+      max-width: 90px;
+  }
+
+  #menu-icon {
+      font-size: 45px;
+  }
+
+  .nav-open {
+      max-width: 35vw;
+      font-size: 26px;
+      padding-top: 30px;
+  }
+
+  #header-bottom {
+      max-height: 5vh;
+      padding-bottom: 10vh;
+  }
+}
+
+@media (max-width: 500px) {
+  #logo {
+      max-width: 80px;
+  }
+
+  #menu-icon {
+      font-size: 42px;
+  }
+
+  .nav-open {
+      font-size: 22px;
+      max-width: 40vw;
+      height: 40vh;
+      padding-top: 25px;
+  }
+
+  #header-bottom {
+      min-height: 50vh;
+  }
 }
 
 /*map styling*/
