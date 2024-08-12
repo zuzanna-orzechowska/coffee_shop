@@ -1,0 +1,23 @@
+#header-bottom {
+    min-height: 25vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom left, rgba(59, 45, 30, 0.5), rgba(151, 140, 128, 0.6)), url("images/coffee-beans-backgound-header.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 0;
+    line-height: 2;
+}
+
+h1 {
+    font-size: 40px;
+    text-decoration: underline;
+}
+

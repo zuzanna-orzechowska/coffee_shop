@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Zuzanna Orzechowska">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleContactPage.css">
     <link rel="icon" type="image/x-icon" href="images/coffee-cup-logo.png">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <script defer src="app.js"></script>
@@ -19,12 +20,34 @@
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="delivery.html">Delivery</a></li>
                 <li><a href="cafeterias-map.html">Cafeterias</a></li>
+                <li><a href="#">Contact</a></li>
                 <li><a href="shop.html">Shop</a></li>
             </ul>
         </nav>
         <i class="ri-menu-5-line" id="menu-icon" onclick="changeMenuIcon()"></i>
     </header>
+    <div id="header-bottom"></div>
+    <div class="section-cut"></div>
 
+    <section>
+        <h1>Contact with us</h1>
+        <form action="https://formspree.io/f/myzgjbrp" method="post" autocomplete="off">
+            <input type="text" name="name">
+            <div class="label-txt">Your name</div>
+            <input type="email" name="email">
+            <div class="label-txt">Your email</div>
+            <label for="option"></label>
+            <select name="contact-reason" id="option">
+                <option value="" disabled selected>Choose a reason</option>
+                <option value="remarks-to-products">Remarks to products</option>
+                <option value="remarks-to-service">Remarks to service in cafeterias</option>
+                <option value="online-shop-problems">Problems with online shop</option>
+                <option value="others">Others</option>
+            </select>
+        </form>
+    </section>
+
+    <div class="section-cut"></div>
     <footer>
         <div class="footer-icon">
             <a href="#logo"><img src="images/coffee-cup-logo.png" alt="Cofove logo" title="Go up"></a>

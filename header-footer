@@ -6,6 +6,7 @@
             <li><a href="menu.html">Menu</a></li>
             <li><a href="delivery.html">Delivery</a></li>
             <li><a href="cafeterias-map.html">Cafeterias</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="shop.html">Shop</a></li>
         </ul>
     </nav>
@@ -81,3 +82,6 @@
 Attribution
 <!---
                 <a href="https://www.flaticon.com/free-icons/food" title="food icons">Food icons created by Freepik - Flaticon</a> -->  
+                   /* input text animation:  https://youtu.be/Tdzas-IlKSM?si=EcJVzToSetARuf1Q*/ --> contact.html
+kubek z kawą - <a href="https://pl.freepik.com/darmowe-zdjecie/pyszna-ekologiczna-kawa-martwa-natura_274022364.htm#fromView=search&page=1&position=15&uuid=6b217114-31ee-442c-8df3-c21736d325ac">Obraz autorstwa freepik</a>
+background w contact.html - <a href="https://pl.freepik.com/darmowe-zdjecie/pyszna-ekologiczna-kawa-martwa-natura_274022178.htm">Obraz autorstwa freepik</a>
