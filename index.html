@@ -17,19 +17,15 @@
     <title>Cofove - love for coffee ☕❤️</title>
 </head>
 <body>
-    <!--!TUTAJ TEN HEADER ZROBIC ZA POMOCĄ SERVER SIDE INCLUDES I SERWER Z APACHE OGARNĄC ŻEBY DZIAŁAŁO XD
-    W CZACIE - "Współdzielenie kodu HTML"-->
     <header>
         <a href="index.html"><img src="images/coffee-cup-logo.png" alt="cup of coffee with two coffee beans" id="logo" title="Home page"></a>
         <nav>
             <ul id="ul-menu">
-                <!--DODAĆ LINKI DO OSOBNYCH STRON-->
                 <li><a href="#about-us-section">About Us</a></li>
                 <li><a href="#menu-slider-section">Menu</a></li>
-                <li><a href="#delivery-section">Delivery</a></li> <!--TUTAJ PRZECHODZI DO SEKCJI NA STRONIE-->
-                <li><a href="#">Contact</a></li> <!--TUTAJ PRZECHODZI DO STOPKI-->
-                <li><a href="cafeterias-map.html">Cafeterias</a></li> <!--TUTAJ PRZECHODZI DO ODZIELNEJ STRONY-->
-                <li><a href="#">Shop</a></li>
+                <li><a href="#delivery-section">Delivery</a></li>
+                <li><a href="cafeterias-map.html">Cafeterias</a></li>
+                <li><a href="shop.html">Shop</a></li>
             </ul>
         </nav>
         <i class="ri-menu-5-line" id="menu-icon" onclick="changeMenuIcon()"></i>
@@ -39,10 +35,9 @@
         <q>with love and passion for coffee</q>
         <p>Prepare your favorite coffee at home with our products</p>
         <div class="header-bottom-shop">
-            <button type="button" id="shop-now-btn">Shop now</button>
+            <button type="button" id="shop-now-btn" onclick="window.location.href='shop.html'">Shop now</button>
         </div>
     </div>
-<!--! TUTAJ ANIMACJE ŻE JAK SIE SCROLUJE TO TAK LADNIE SIE ZACZYNA POKAZYWAĆ TREŚĆ-->
     <article>
         <div class="section-cut"></div>
         <section id="about-us-section" class="hidden">
@@ -57,9 +52,8 @@
                 <p>Our team at Cofove is united by this passion. We are coffee enthusiasts, dedicated to sourcing the finest beans, crafting exceptional blends, and delivering a coffee experience that inspires and delights.</p>
                 <p>Join us in savoring the moments that coffee brings—whether it's a quiet morning ritual or a shared cup with friends. Discover the essence of Cofove in every sip.</p>
                 <div class="menu-shop-buttons">
-                    <!--TUTAJ DODAĆ ŻEBY ODPOWIEDNIE STRONY SIE OTWIERAŁY-->
                     <button type="button" id="cafeterias-btn" onclick="window.location.href='cafeterias-map.html'">Find us</button>
-                    <button type="button" id="shop-btn">Shop</button>
+                    <button type="button" id="shop-btn" onclick="window.location.href='shop.html'">Shop</button>
                 </div>
             </div>
         </section>
@@ -125,77 +119,70 @@
     <div class="section-cut"></div>
 
     <footer>
-            <div class="footer-icon">
-                <a href="#logo"><img src="images/coffee-cup-logo.png" alt="Cofove logo" title="Go up"></a>
-                <h1>Cofove</h1>
-            </div>
-            <div class="footer-wrapper">
-                <div class="footer-open-hours">
-                    <h2>Opening hours</h2>
-                    <div class="day-hour">
-                        <div class="day">
-                            <p>Monday</p>
-                            <p>Tuesday</p>
-                            <p>Wednesday</p>
-                            <p>Thursday</p>
-                            <p>Friday</p>
-                            <p>Saturday</p>
-                            <p>Sunday</p>
-                        </div>
-                        <div class="hour">
-                            <p>8:00AM - 7:30PM</p>
-                            <p>8:00AM - 7:30PM</p>
-                            <p>8:00AM - 7:30PM</p>
-                            <p>8:00AM - 7:30PM</p>
-                            <p>9:00AM - 8:30PM</p>
-                            <p>9:00AM - 6:00PM</p>
-                            <p>10:00AM - 6:00PM</p>
-                        </div>
+        <div class="footer-icon">
+            <a href="#logo"><img src="images/coffee-cup-logo.png" alt="Cofove logo" title="Go up"></a>
+            <h1>Cofove</h1>
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer-open-hours">
+                <h2>Opening hours</h2>
+                <div class="day-hour">
+                    <div class="day">
+                        <p>Monday</p>
+                        <p>Tuesday</p>
+                        <p>Wednesday</p>
+                        <p>Thursday</p>
+                        <p>Friday</p>
+                        <p>Saturday</p>
+                        <p>Sunday</p>
                     </div>
-                </div>
-                <div class="footer-quick-links">
-                    <h2>Quick links</h2>
-                    <!--! DODAĆ LINKI-->
-                    <div class="links">
-                        <a href="">About us</a>
-                        <a href="">Menu</a>
-                        <a href="">Cafeterias</a>
-                        <a href="">Delivery</a>
-                        <a href="">Contact</a>
-                        <a href="">Shop</a>
-                    </div>
-                </div>
-                <div class="footer-support">
-                    <h2>Support</h2>
-                    <div class="links">
-                        <!--!LINKI -->
-                        <a href="">Contact</a>
-                        <a href="">FAQ </a>
-                        <a href="">Attribution</a> <!--TUTAJ LINKI I COS SKAD SIE BRAŁO ZDJĘCIA-->
-                        <!---
-                        <a href="https://www.flaticon.com/free-icons/food" title="food icons">Food icons created by Freepik - Flaticon</a> -->
-                    </div>
-                </div>
-                <div class="footer-connect">
-                    <h2>Connect with us</h2>
-                    <p>Sign up for exclusive offers and first access to the latest news</p>
-                    <!--! TUTAJ ZMIENIC NA COŚ W PHP do action-->
-                    <form action="mailto:strony.zuzanny@gmail.com" method="post" autocomplete="off">
-                        <input type="email" placeholder="Enter your e-mail">
-                        <button type="submit">Send</button>
-                    </form>
-                    <div class="footer-connect-img">
-                        <!--! DODAĆ LINKI-->
-                       <a href=""><img src="images/facebook-logo.png" alt="Facebook logo"></a>
-                       <a href=""><img src="images/instagram-logo.png" alt="Instagram logo"></a>
-                       <a href=""><img src="images/linkedin-logo.png" alt="Linkedin logo"></a>
+                    <div class="hour">
+                        <p>8:00AM - 7:30PM</p>
+                        <p>8:00AM - 7:30PM</p>
+                        <p>8:00AM - 7:30PM</p>
+                        <p>8:00AM - 7:30PM</p>
+                        <p>9:00AM - 8:30PM</p>
+                        <p>9:00AM - 6:00PM</p>
+                        <p>10:00AM - 6:00PM</p>
                     </div>
                 </div>
             </div>
-        </footer>
-            <div class="footer-img-info">
-                <h6>Made with ❤️ by Zuza</h6>
+            <div class="footer-quick-links">
+                <h2>Quick links</h2>
+                <div class="links">
+                    <a href="#about-us-section">About us</a>
+                    <a href="#menu-slider-section">Menu</a>
+                    <a href="cafeterias-map.html">Cafeterias</a>
+                    <a href="#delivery-section">Delivery</a>
+                    <a href="shop.html">Shop</a>
+                </div>
             </div>
+            <div class="footer-support">
+                <h2>Support</h2>
+                <div class="links">
+                    <a href="contact.html">Contact</a>
+                    <a href="faq.html">FAQ </a>
+                    <a href="attribution.html">Attribution</a>
+                </div>
+            </div>
+            <div class="footer-connect">
+                <h2>Connect with us</h2>
+                <p>Sign up for exclusive offers and first access to the latest news</p>
+                <form action="https://formspree.io/f/xovawpzp" method="post" autocomplete="off">
+                    <input type="email" placeholder="Enter your e-mail" name="newsletter-email">
+                    <button type="submit">Send</button>
+                </form>
+                <div class="footer-connect-img">
+                   <a href="https://www.facebook.com"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+                   <a href="https://www.instagram.com"><img src="images/instagram-logo.png" alt="Instagram logo"></a>
+                   <a href="https://www.linkedin.com"><img src="images/linkedin-logo.png" alt="Linkedin logo"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-img-info">
+        <h6>Made with ❤️ by Zuza</h6>
+    </div>
 
     <!--custom scripts-->
     <!--SWIPER-->
