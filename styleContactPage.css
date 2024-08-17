@@ -8,7 +8,7 @@
 
 section {
     width: 100%;
-    max-width: 36vw;
+    max-width: 44vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +31,7 @@ form:not(#footer-form) {
     align-items: center;
     gap: 4vh;
     width: 100%;
-    max-width: 20vw;
+    max-width: 28vw;
 }
 
 
@@ -94,4 +94,137 @@ select {
     cursor: pointer;
 }
 
+@media (max-width: 1250px) {
+    header nav ul a {
+        color: black;
+    }
+    
+    header nav ul a::after {
+        background: #fee5cc;
+    }
+}
 
+@media (max-width: 1180px) {
+    section {
+        max-width: 48vw;
+    }
+
+    form:not(#footer-form) {
+        max-width: 32vw;
+    }
+}
+
+@media (max-width: 1045px) {
+    .buttons-form button[type="submit"] {
+        max-width: 9vw;
+    }
+}
+
+@media (max-width: 915px) {
+    section {
+        max-width: 52vw;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    form:not(#footer-form) {
+        max-width: 36vw;
+    }
+
+    .input, select, .label {
+        font-size: 18px;
+    }
+    
+    .input:focus + .label, .input:not(:placeholder-shown) + .label {
+        font-size: 16px;
+    }
+
+    .buttons-form button {
+        font-size: 18px;
+        max-width: 10vw;
+    }
+}
+
+@media (max-width: 845px) {
+    section {
+        max-width: 56vw;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    form:not(#footer-form) {
+        max-width: 40vw;
+    }
+
+    .label {
+        top: 6px;
+    }
+
+    .buttons-form button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 755px) {
+    .buttons-form button[type="submit"] {
+        max-width: 11vw;
+    }
+}
+
+@media (max-width: 660px) {
+    section {
+        max-width: 60vw;
+    }
+
+    form:not(#footer-form) {
+        max-width: 44vw;
+    }
+
+    .buttons-form button[type="submit"] {
+        max-width: 12vw;
+    }
+
+    .buttons-form button[type="reset"] {
+        max-width: 11vw;
+    }
+}
+
+@media (max-width: 530px) {
+    section {
+        max-width: 72vw;
+    }
+
+    form:not(#footer-form) {
+        max-width: 52vw;
+    }
+
+    .buttons-form button[type="submit"] {
+        max-width: 14vw;
+    }
+
+    .buttons-form button[type="reset"] {
+        max-width: 13vw;
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    section {
+        max-width: 80vw;
+    }
+
+    form:not(#footer-form) {
+        max-width: 60vw;
+    }
+
+    .buttons-form button[type="submit"] {
+        max-width: 16vw;
+    }
+}
