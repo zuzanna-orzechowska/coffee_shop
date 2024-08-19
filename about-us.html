@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Zuzanna Orzechowska">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleContactPage.css">
+    <link rel="stylesheet" href="styleAboutUsPage.css">
     <link rel="icon" type="image/x-icon" href="images/coffee-cup-logo.png">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <script defer src="app.js"></script>
-    <title>Contact | Cofove ☕❤️</title>
+    <title>About us | Cofove ☕❤️</title>
 </head>
 <body>
     <header>
         <a href="index.html"><img src="images/coffee-cup-logo.png" alt="cup of coffee with two coffee beans" id="logo" title="Home page"></a>
         <nav>
             <ul id="ul-menu">
-                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="#">About Us</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="delivery.html">Delivery</a></li>
                 <li><a href="cafeterias-map.html">Cafeterias</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="shop.html">Shop</a></li>
             </ul>
         </nav>
@@ -30,34 +30,24 @@
     <div class="section-cut"></div>
 
     <section>
-        <h1>Contact with us</h1>
-        <form action="https://formspree.io/f/myzgjbrp" method="post" autocomplete="off">
-            <div class="input-label">
-                <input type="text" name="name" class="input" placeholder="">
-                <label class="label">Your name</label>
+        <h1>About us</h1>
+        <div class="txt-content">
+            <h2>Welcome to <span>Cofove</span></h2>
+                <p>At Cofove, we celebrate the art and joy of coffee. Our journey began with a simple love for that perfect cup — a love we now share with you. From the rich aroma of freshly roasted beans to the comforting warmth of each sip, coffee isn't just a beverage; it's a passion.</p>
+                <p>Our team at Cofove is united by this passion. We are coffee enthusiasts, dedicated to sourcing the finest beans, crafting exceptional blends, and delivering a coffee experience that inspires and delights.</p>
+                <p>Join us in savoring the moments that coffee brings—whether it's a quiet morning ritual or a shared cup with friends. Discover the essence of Cofove in every sip.</p>
+                <div class="menu-shop-buttons">
+                    <button type="button" id="cafeterias-btn" onclick="window.location.href='cafeterias-map.html'">Find us</button>
+                    <button type="button" id="shop-btn" onclick="window.location.href='shop.html'">Shop</button>
+                </div>
             </div>
-            <div class="input-label">
-                <input type="email" name="email" class="input" placeholder="" required>
-                <label class="label">Your email</label>
-            </div>
-            <select name="contact-reason">
-                <option value="" disabled selected>Choose a reason</option>
-                <option value="remarks-to-products">Remarks to products</option>
-                <option value="remarks-to-service">Remarks to service in cafeterias</option>
-                <option value="online-shop-problems">Problems with online shop</option>
-                <option value="others">Others</option>
-            </select>
-            <div class="input-label">
-                <textarea name="message" rows="6" class="input" placeholder="" required></textarea>
-                <label class="label">Your message</label>
-            </div>
-            <div class="buttons-form">
-                <button type="submit">Submit</button>
-                <button type="reset">Reset</button>
-            </div>
-        </form>
+        </div>
+        <div class="img-content">
+            <img src="images/pouring-coffee.jpg" alt="person pouring coffee" title="Photo by Di Bella Coffee">
+            <img src="images/team.jpg" alt="three coffeehouse bartenders" title="Photo by Ketut Subiyanto">
+        </div>
     </section>
-
+    
     <div class="section-cut"></div>
     <footer>
         <div class="footer-icon">
@@ -109,7 +99,7 @@
             <div class="footer-connect">
                 <h2>Connect with us</h2>
                 <p>Sign up for exclusive offers and first access to the latest news</p>
-                <form action="https://formspree.io/f/xovawpzp" method="post" autocomplete="off" id="footer-form">
+                <form action="https://formspree.io/f/xovawpzp" method="post" autocomplete="off">
                     <input type="email" placeholder="Enter your e-mail" name="newsletter-email">
                     <button type="submit">Send</button>
                 </form>
@@ -124,5 +114,6 @@
     <div class="footer-img-info">
         <h6>Made with ❤️ by Zuza</h6>
     </div>
+
 </body>
 </html>

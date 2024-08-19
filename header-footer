@@ -2,7 +2,7 @@
     <a href="index.html"><img src="images/coffee-cup-logo.png" alt="cup of coffee with two coffee beans" id="logo" title="Home page"></a>
     <nav>
         <ul id="ul-menu">
-            <li><a href="index.html#about-us-section">About Us</a></li>
+            <li><a href="about-us.html">About Us</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="delivery.html">Delivery</a></li>
             <li><a href="cafeterias-map.html">Cafeterias</a></li>
@@ -45,7 +45,7 @@
         <div class="footer-quick-links">
             <h2>Quick links</h2>
             <div class="links">
-                <a href="index.html#about-us-section">About us</a>
+                <a href="about-us.html">About us</a>
                 <a href="menu.html">Menu</a>
                 <a href="cafeterias-map.html">Cafeterias</a>
                 <a href="delivery.html">Delivery</a>
