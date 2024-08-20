@@ -8,7 +8,6 @@
 
 section {
     width: 100%;
-    max-width: 44vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,28 +15,33 @@ section {
     gap: 4vh;
     margin: 5vh auto;
     padding: 5vh;
-    background: rgba(254, 229, 204,0.3);
-    border-radius: 3px 60px;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 50px;
     text-decoration: underline;
 }
 
 form:not(#footer-form) {
+    padding: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4vh;
     width: 100%;
-    max-width: 28vw;
+    max-width: 44vw;
+    background: rgba(254, 229, 204,0.3);
+    border-radius: 3px 60px;
 }
 
+#select-label {
+    display: none;
+}
 
-.input-label {
+.input-label, select {
     position: relative;
     width: 100%;
+    max-width: 30vw;
 }
 
 .input, select {
@@ -94,6 +98,16 @@ select {
     cursor: pointer;
 }
 
+@media (max-width: 1335px) {
+    form:not(#footer-form) {
+        max-width: 48vw;
+    }
+
+    .input-label, select {
+        max-width: 34vw;
+    }
+}
+
 @media (max-width: 1250px) {
     header nav ul a {
         color: black;
@@ -105,32 +119,32 @@ select {
 }
 
 @media (max-width: 1180px) {
-    section {
-        max-width: 48vw;
+    h1 {
+        font-size: 45px;
     }
 
     form:not(#footer-form) {
-        max-width: 32vw;
-    }
-}
-
-@media (max-width: 1045px) {
-    .buttons-form button[type="submit"] {
-        max-width: 9vw;
-    }
-}
-
-@media (max-width: 915px) {
-    section {
         max-width: 52vw;
     }
 
-    h1 {
-        font-size: 36px;
+    .input-label, select {
+        max-width: 38vw;
+    }
+}
+
+/*@media (max-width: 1045px) {
+    .buttons-form button[type="submit"] {
+        max-width: 9vw;
+    }
+}*/
+
+@media (max-width: 1005px) {
+    form:not(#footer-form) {
+        max-width: 56vw;
     }
 
-    form:not(#footer-form) {
-        max-width: 36vw;
+    .input-label, select {
+        max-width: 42vw;
     }
 
     .input, select, .label {
@@ -148,16 +162,12 @@ select {
 }
 
 @media (max-width: 845px) {
-    section {
-        max-width: 56vw;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
-
     form:not(#footer-form) {
-        max-width: 40vw;
+        max-width: 60vw;
+    }
+
+    .input-label, select {
+        max-width: 46vw;
     }
 
     .label {
@@ -175,13 +185,13 @@ select {
     }
 }
 
-@media (max-width: 660px) {
-    section {
-        max-width: 60vw;
+@media (max-width: 675px) {
+    form:not(#footer-form) {
+        max-width: 64vw;
     }
 
-    form:not(#footer-form) {
-        max-width: 44vw;
+    .input-label, select {
+        max-width: 46vw;
     }
 
     .buttons-form button[type="submit"] {
@@ -193,17 +203,17 @@ select {
     }
 }
 
-@media (max-width: 530px) {
-    section {
+@media (max-width: 540px) {
+    form:not(#footer-form) {
         max-width: 72vw;
     }
 
-    form:not(#footer-form) {
-        max-width: 52vw;
+    .input-label, select {
+        max-width: 50vw;
     }
 
     .buttons-form button[type="submit"] {
-        max-width: 14vw;
+        max-width: 15vw;
     }
 
     .buttons-form button[type="reset"] {
@@ -213,18 +223,22 @@ select {
 
 @media (max-width: 450px) {
     h1 {
-        font-size: 30px;
-    }
-
-    section {
-        max-width: 80vw;
+        font-size: 40px;
     }
 
     form:not(#footer-form) {
+        max-width: 80vw;
+    }
+
+    .input-label, select {
         max-width: 60vw;
     }
 
     .buttons-form button[type="submit"] {
-        max-width: 16vw;
+        max-width: 18vw;
+    }
+
+    .buttons-form button[type="reset"] {
+        max-width: 15vw;
     }
 }

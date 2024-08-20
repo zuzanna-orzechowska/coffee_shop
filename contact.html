@@ -33,14 +33,15 @@
         <h1>Contact with us</h1>
         <form action="https://formspree.io/f/myzgjbrp" method="post" autocomplete="off">
             <div class="input-label">
-                <input type="text" name="name" class="input" placeholder="">
-                <label class="label">Your name</label>
+                <input type="text" name="name" class="input" placeholder="" id="name">
+                <label class="label" for="name">Your name</label>
             </div>
             <div class="input-label">
-                <input type="email" name="email" class="input" placeholder="" required>
-                <label class="label">Your email</label>
+                <input type="email" name="email" class="input" placeholder="" id="email" required>
+                <label class="label" for="email">Your email</label>
             </div>
-            <select name="contact-reason">
+            <label for="contact-reason" id="select-label"></label>
+            <select name="contact-reason" id="contact-reason">
                 <option value="" disabled selected>Choose a reason</option>
                 <option value="remarks-to-products">Remarks to products</option>
                 <option value="remarks-to-service">Remarks to service in cafeterias</option>
@@ -48,8 +49,8 @@
                 <option value="others">Others</option>
             </select>
             <div class="input-label">
-                <textarea name="message" rows="6" class="input" placeholder="" required></textarea>
-                <label class="label">Your message</label>
+                <textarea name="message" rows="6" class="input" placeholder="" id="message" required></textarea>
+                <label class="label" for="message">Your message</label>
             </div>
             <div class="buttons-form">
                 <button type="submit">Submit</button>
