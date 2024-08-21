@@ -74,6 +74,13 @@ h1 {
 
 .img-content {
     display: flex;
+    gap: 5vw;
+}
+
+.img-content .supplier img {
+    border-radius: 60px 3px;
+    border: 0.5px black solid;
+    margin-bottom: 2vh;
 }
 
 .img-content .supplier {
@@ -97,4 +104,136 @@ h1 {
 .img-content .supplier button:hover {
     background-color: #fee5cc;
     cursor: pointer;
+}
+
+@media (max-width: 1630px) {
+    .txt-content {
+        max-width: 54vw;
+    }
+
+    .img-content {
+        gap: 6vw;
+    }
+
+    .img-content .supplier button {
+        max-width: 10vw;
+    }
+
+}
+
+@media (max-width: 1415px) {
+    .txt-content {
+        max-width: 60vw;
+    }
+}
+
+@media (max-width: 1250px) {
+    header nav ul a {
+        color: black;
+    }
+    
+    header nav ul a::after {
+        background: #fee5cc;
+    }
+}
+
+@media (max-width: 1185px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    .txt-content {
+        max-width: 64vw;
+    }
+
+    .txt-content h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1125px) {
+    .txt-content {
+        max-width: 68vw;
+    }
+
+    .txt-content p {
+        font-size: 18px;
+        margin-bottom: 2vh
+    }
+    
+    .delivery-list ul {
+        font-size: 18px;
+    }
+
+    .img-content .supplier img {
+        width: 160px;
+    }
+
+    .img-content .supplier button {
+        max-width: 12vw;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 890px) {
+    .txt-content {
+        max-width: 76vw;
+    }
+}
+
+@media (max-width: 845px) {
+    .img-content .supplier button {
+        max-width: 14vw;
+    }
+}
+
+@media (max-width: 770px) {
+    .txt-content {
+        max-width: 82vw;
+    }
+}
+
+@media (max-width: 715px) {
+    .txt-content {
+        max-width: 86vw;
+    }
+
+    .img-content .supplier img {
+        width: 140px;
+    }
+
+    .img-content .supplier button {
+        max-width: 16vw;
+    }
+}
+
+@media (max-width: 615px) {
+    .img-content {
+        flex-direction: column;
+        gap: 7vw;
+    }
+
+    .img-content .supplier img {
+        width: 180px;
+    }
+
+    .img-content .supplier button {
+        max-width: 20vw;
+    }
+}
+
+@media (max-width: 490px) {
+    .txt-content {
+        max-width: 90vw;
+    }
+
+    .img-content .supplier button {
+        max-width: 24vw;
+    }
+}
+
+@media (max-width: 425px) {
+    .img-content .supplier button {
+        max-width: 26vw;
+    }
 }
