@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zuzanna Orzechowska">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleDeliveryPage.css">
+    <link rel="icon" type="image/x-icon" href="images/coffee-cup-logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <script defer src="app.js"></script>
+    <title>Delivery | Cofove ☕❤️</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/coffee-cup-logo.png" alt="cup of coffee with two coffee beans" id="logo" title="Home page"></a>
+        <nav>
+            <ul id="ul-menu">
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="cafeterias-map.html">Cafeterias</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </nav>
+        <i class="ri-menu-5-line" id="menu-icon" onclick="changeMenuIcon()"></i>
+    </header>
+    <div id="header-bottom"></div>
+    <div class="section-cut"></div>
+
+    <section>
+        <h1>Delivery</h1>
+        <div class="txt-content">
+            <h2>Enjoy your favorite coffee at home</h2>
+                <p>Find out if delivery is available near you. Order by app or our website. How can you order delivery? That's easy, it's only takes three steps:</p>
+                <div class="delivery-list">
+                    <ul>
+                        <li id="first-step">Choose one of the supplier from below and click "Order now" button</li>
+                        <li id="second-step">Complete and order - choose address and something from our menu</li>
+                        <li id="third-step">Wait for quick drop-off and enjoy</li>
+                    </ul>
+                </div>
+        </div>
+        <div class="img-content">
+            <div class="supplier">
+                <a href="https://glovoapp.com/pl/en/krakow/" target="_blank"><img src="images/glovo_logo.png" alt="Glovo logo"></a>
+                <button type="button" onclick="window.open('https://glovoapp.com/pl/en/krakow/')">Order now</button>
+            </div>
+            <div class="supplier">
+                <a href="https://wolt.com/en/pol" target="_blank"><img src="images/wolt_logo.png" alt="Wolt logo"></a>
+                <button type="button" onclick="window.open('https://wolt.com/en/pol')">Order now</button>
+            </div>
+            <div class="supplier">
+                <a href="https://www.ubereats.com/pl-en" target="_blank"><img src="images/uber_eats_logo.png" alt="Uber eats logo"></a>
+                <button type="button" onclick="window.open('https://www.ubereats.com/pl-en')">Order now</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-cut"></div>
+    <footer>
+        <div class="footer-icon">
+            <a href="#logo"><img src="images/coffee-cup-logo.png" alt="Cofove logo" title="Go up"></a>
+            <h1>Cofove</h1>
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer-open-hours">
+                <h2>Opening hours</h2>
+                <div class="day-hour">
+                    <div class="day">
+                        <p>Monday</p>
+                        <p>Tuesday</p>
+                        <p>Wednesday</p>
+                        <p>Thursday</p>
+                        <p>Friday</p>
+                        <p>Saturday</p>
+                        <p>Sunday</p>
+                    </div>
+                    <div class="hour">
+                        <p>8:00AM - 7:30PM</p>
+                        <p>8:00AM - 7:30PM</p>
+                        <p>8:00AM - 7:30PM</p>
+                        <p>8:00AM - 7:30PM</p>
+                        <p>9:00AM - 8:30PM</p>
+                        <p>9:00AM - 6:00PM</p>
+                        <p>10:00AM - 6:00PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-quick-links">
+                <h2>Quick links</h2>
+                <div class="links">
+                    <a href="about-us.html">About us</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="cafeterias-map.html">Cafeterias</a>
+                    <a href="#">Delivery</a>
+                    <a href="shop.html">Shop</a>
+                </div>
+            </div>
+            <div class="footer-support">
+                <h2>Support</h2>
+                <div class="links">
+                    <a href="contact.html">Contact</a>
+                    <a href="faq.html">FAQ </a>
+                    <a href="attribution.html">Attribution</a>
+                </div>
+            </div>
+            <div class="footer-connect">
+                <h2>Connect with us</h2>
+                <p>Sign up for exclusive offers and first access to the latest news</p>
+                <form action="https://formspree.io/f/xovawpzp" method="post" autocomplete="off">
+                    <input type="email" placeholder="Enter your e-mail" name="newsletter-email">
+                    <button type="submit">Send</button>
+                </form>
+                <div class="footer-connect-img">
+                   <a href="https://www.facebook.com"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+                   <a href="https://www.instagram.com"><img src="images/instagram-logo.png" alt="Instagram logo"></a>
+                   <a href="https://www.linkedin.com"><img src="images/linkedin-logo.png" alt="Linkedin logo"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-img-info">
+        <h6>Made with ❤️ by Zuza</h6>
+    </div>
+    
+</body>
+</html>
