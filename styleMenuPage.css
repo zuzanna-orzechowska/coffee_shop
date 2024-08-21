@@ -1,0 +1,78 @@
+#header-bottom {
+    min-height: 25vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom left, rgba(59, 45, 30, 0.5), rgba(151, 140, 128, 0.6)), url("images/coffee-beans-backgound-header.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+    margin: 5vh auto;
+    padding: 5vh;
+}
+
+h1 {
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 44vw;
+    padding: 2vw;
+    background: rgba(254, 229, 204,0.3);
+    border-radius: 3px 60px;
+}
+
+.menu-wrapper p {
+    font-size: 20px;
+    margin-bottom: 4vh
+}
+
+.txt-content h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 2vh;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+
+.icons .icons-content {
+    transition: all 0.3s ease;
+    
+}
+
+.icons .icons-content:hover {
+    color: #fee5cc;
+    transform: scale(1.2);
+    text-shadow: 4px 4px 6px rgba(33, 29, 29, 1);
+    cursor: pointer;
+}
+
+.icons .icons-content i {
+    font-size: 40px;
+}
+
+.icons .icons-content p {
+    font-weight: bold;
+}
+
+.menu-wrapper hr {
+    background: black;
+    height: 0.5vh;
+    width: 22vw;
+    margin: auto;
+}
