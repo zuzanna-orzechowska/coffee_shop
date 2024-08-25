@@ -42,3 +42,19 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenEl = document.querySelectorAll(".hidden");
 
 hiddenEl.forEach((el) => observer.observe(el));
+
+//menu.html - changing menu content
+let contentName = document.querySelector(".content-name");
+
+let menuNewContent = document.querySelector(".menu-new-content");
+let menuCoffeeIcon = document.querySelector(".ri-drinks-line");
+let firstIcon = document.getElementById("first-icon");
+let menuCoffeeContent = document.querySelector(".menu-coffee-content");
+
+menuCoffeeIcon.addEventListener("click", displayCoffeeContent);
+function displayCoffeeContent () {
+    menuCoffeeContent.classList.remove("menu-hidden");
+    menuNewContent.classList.add("menu-hidden");
+    firstIcon.classList.add("icons-show");
+    contentName.innerText = "Coffee";
+};

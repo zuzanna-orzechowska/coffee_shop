@@ -55,7 +55,7 @@ h1 {
     
 }
 
-.icons .icons-content:hover {
+.icons .icons-content:hover, .icons-show {
     color: #fee5cc;
     transform: scale(1.2);
     text-shadow: 4px 4px 6px rgba(33, 29, 29, 1);
@@ -88,7 +88,8 @@ h1 {
     margin-top: 5vh;
 }
 
-.menu-new-content {
+/** menu-new-content*/
+.menu-new-content, .menu-coffee-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -141,6 +142,11 @@ h1 {
     font-weight: bold;
 }
 
+.menu-hidden {
+    display: none !important;
+}
+
+/*media menu-new-content */
 @media (max-width: 1320px) {
     .menu-wrapper {
         max-width: 58vw;
@@ -254,3 +260,5 @@ h1 {
         max-width: 66vw;
     }
 }
+
+/**  */
