@@ -141,7 +141,7 @@ h1 {
 }
 
 /** menu content*/
-.menu-new-content, .menu-coffee-content, .menu-dessert-content {
+.menu-new-content, .menu-coffee-content, .menu-dessert-content, .menu-drinks-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -150,7 +150,7 @@ h1 {
     margin: 5vh 0;
 }
 
-.menu-new-content .img-container:nth-child(3), .menu-dessert-content .img-container:nth-child(5) {
+.menu-new-content .img-container:nth-child(3), .menu-dessert-content .img-container:nth-child(5), .menu-drinks-content .img-container:nth-child(5) {
     grid-column: 1 / span 2;
     justify-self: center;
 }
@@ -158,7 +158,7 @@ h1 {
 /*media menu-new-content */
 @media (max-width: 1320px) {
     .menu-wrapper {
-        max-width: 58vw;
+        max-width: 60vw;
     }
 
     .menu-new-content {
@@ -166,29 +166,29 @@ h1 {
     }
 
     .img-container {
-        max-width: 22vw;
+        max-width: 24vw;
         height: 32vh;
     }
 }
 
 @media (max-width: 1170px) {
     .menu-wrapper {
-        max-width: 60vw;
+        max-width: 62vw;
     }
 
     .img-container {
-        max-width: 24vw;
+        max-width: 26vw;
         height: 34vh;
     }
 }
 
 @media (max-width: 1110px) {
     .menu-wrapper {
-        max-width: 68vw;
+        max-width: 70vw;
     }
 
     .img-container {
-        max-width: 28vw;
+        max-width: 30vw;
     }
 }
 
@@ -206,11 +206,11 @@ h1 {
     }
 
     .menu-wrapper {
-        max-width: 76vw;
+        max-width: 78vw;
     }
 
     .img-container {
-        max-width: 32vw;
+        max-width: 34vw;
     }
 }
 
@@ -219,54 +219,54 @@ h1 {
         padding: 4vw;
     }
 
-    .menu-new-content, .menu-coffee-content, .menu-dessert-content {
+    .menu-new-content, .menu-coffee-content, .menu-dessert-content, .menu-drinks-content {
         grid-template-columns: 1fr;
     }
 
-    .menu-new-content .img-container:nth-child(3), .menu-dessert-content .img-container:nth-child(5) {
+    .menu-new-content .img-container:nth-child(3), .menu-dessert-content .img-container:nth-child(5), .menu-drinks-content .img-container:nth-child(5) {
         grid-column: auto;
     }
 
     .img-container {
-        max-width: 36vw;
+        max-width: 38vw;
     }
 }
 
 @media (max-width: 720px) {
     .menu-wrapper {
-        max-width: 82vw;
+        max-width: 86vw;
     }
 
     .img-container {
-        max-width: 42vw;
+        max-width: 46vw;
     }
 }
 
 @media (max-width: 625px) {
     .menu-wrapper {
-        max-width: 86vw;
+        max-width: 88vw;
     }
 
     .img-container {
-        max-width: 48vw;
+        max-width: 50vw;
     }
 }
 
 @media (max-width: 530px) {
     .img-container {
-        max-width: 56vw;
+        max-width: 58vw;
     }
 }
 
 @media (max-width: 480px) {
     .img-container {
-        max-width: 62vw;
+        max-width: 64vw;
     }
 }
 
 @media (max-width: 430px) {
     .img-container {
-        max-width: 66vw;
+        max-width: 68vw;
     }
 }
 

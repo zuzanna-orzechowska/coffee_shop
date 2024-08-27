@@ -53,6 +53,9 @@ let menuCoffeeContent = document.querySelector(".menu-coffee-content");
 //dessert
 let secondIcon = document.getElementById("second-icon");
 let menuDessertContent = document.querySelector(".menu-dessert-content");
+//drinks
+let thirdIcon = document.getElementById("third-icon");
+let menuDrinksContent = document.querySelector(".menu-drinks-content");
 
 //coffee
 firstIcon.addEventListener("click", displayCoffeeContent);
@@ -60,9 +63,11 @@ function displayCoffeeContent () {
     menuCoffeeContent.classList.remove("menu-hidden");
     menuDessertContent.classList.add("menu-hidden");
     menuNewContent.classList.add("menu-hidden");
+    menuDrinksContent.classList.add("menu-hidden");
 
     firstIcon.classList.add("icons-show");
     secondIcon.classList.remove("icons-show");
+    thirdIcon.classList.remove("icons-show");
 
     contentName.innerText = "Coffee";
 };
@@ -73,9 +78,26 @@ function displayDessertContent () {
     menuDessertContent.classList.remove("menu-hidden");
     menuNewContent.classList.add("menu-hidden");
     menuCoffeeContent.classList.add("menu-hidden");
+    menuDrinksContent.classList.add("menu-hidden");
 
     firstIcon.classList.remove("icons-show");
     secondIcon.classList.add("icons-show");
+    thirdIcon.classList.remove("icons-show");
 
     contentName.innerText = "Dessert";
+}
+
+//drinks
+thirdIcon.addEventListener("click", displayDrinksContent);
+function displayDrinksContent () {
+    menuDrinksContent.classList.remove("menu-hidden");
+    menuNewContent.classList.add("menu-hidden");
+    menuCoffeeContent.classList.add("menu-hidden");
+    menuDessertContent.classList.add("menu-hidden");
+
+    firstIcon.classList.remove("icons-show");
+    secondIcon.classList.remove("icons-show");
+    thirdIcon.classList.add("icons-show");
+
+    contentName.innerText = "Drinks";
 }
