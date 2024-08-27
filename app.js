@@ -45,16 +45,37 @@ hiddenEl.forEach((el) => observer.observe(el));
 
 //menu.html - changing menu content
 let contentName = document.querySelector(".content-name");
-
 let menuNewContent = document.querySelector(".menu-new-content");
-let menuCoffeeIcon = document.querySelector(".ri-drinks-line");
+
+//coffee
 let firstIcon = document.getElementById("first-icon");
 let menuCoffeeContent = document.querySelector(".menu-coffee-content");
+//dessert
+let secondIcon = document.getElementById("second-icon");
+let menuDessertContent = document.querySelector(".menu-dessert-content");
 
-menuCoffeeIcon.addEventListener("click", displayCoffeeContent);
+//coffee
+firstIcon.addEventListener("click", displayCoffeeContent);
 function displayCoffeeContent () {
     menuCoffeeContent.classList.remove("menu-hidden");
+    menuDessertContent.classList.add("menu-hidden");
     menuNewContent.classList.add("menu-hidden");
+
     firstIcon.classList.add("icons-show");
+    secondIcon.classList.remove("icons-show");
+
     contentName.innerText = "Coffee";
 };
+
+//dessert
+secondIcon.addEventListener("click", displayDessertContent);
+function displayDessertContent () {
+    menuDessertContent.classList.remove("menu-hidden");
+    menuNewContent.classList.add("menu-hidden");
+    menuCoffeeContent.classList.add("menu-hidden");
+
+    firstIcon.classList.remove("icons-show");
+    secondIcon.classList.add("icons-show");
+
+    contentName.innerText = "Dessert";
+}
