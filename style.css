@@ -249,7 +249,7 @@ header nav ul a:hover:after {
   }
 
 /*styling for footer*/
-footer:not(.footer-img-info) {
+footer:not(.footer-bottom) {
     background: rgba(254, 229, 204,0.3);
 }
 
@@ -371,11 +371,21 @@ footer {
     transform: scale(1.2);
 }
 
-.footer-img-info {
+.footer-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
     background: wheat;
+}
+
+.footer-bottom h3 {
+    font-size: 12px;
+}
+
+.footer-bottom a {
+    font-size: 12px;
+    color: #ce6b09;
+    font-weight: bold;
 }
 
 /*@media for footer*/
