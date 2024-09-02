@@ -1,0 +1,85 @@
+import { items } from "./items.js";
+//console.log('items', items.map(item => item.id)) // zwraca tylko name
+
+const elName = ["coffeeList", "teaList", "mugsList", "accessoriesList", "coffeeProduct", "teaProduct", "mugsProduct","accessoriesProduct"];
+const idName = ["coffee-li", "tea-li", "mugs-li", "accessories-li", "coffee-product", "tea-product", "mugs-product", "accessories-product"];
+const elements = {}; //store references to DOM elements from above arrays
+// console.log(elements); // reference to object element example -  elements.coffeeList.XX
+let defaultProductTxt = document.getElementById("default-product");
+
+for (let i = 0; i<idName.length; i++) {
+    elements[elName[i]] = document.getElementById(idName[i]);
+}
+
+//reset all elements classes
+function resetClassAll () {
+    for (let i = 0; i < 4; i++) { //first 4 are list elements
+        elements[elName[i]].classList.remove("shown"); //ex. elements[0] = coffeeList
+        console.log('reset shown class for:', elName[i]);
+    }
+
+    for (let i = 4; i<elName.length; i++) { // another 4 are product elements
+        elements[elName[i]].classList.add("hidden");
+        console.log('added hidden class to:', elName[i]);
+    }
+};
+
+//render products in proper div
+function renderProducts(category) {
+    const productContent = document.getElementById(`${category}-product`);
+    productContent.innerHTML = ""; // clearing other product div
+
+    const filteredProducts = items.filter(item => item.category === category); // elements which matches category ex. only coffee products
+    filteredProducts.forEach(item => {
+        const productDiv = document.createElement("div");
+        productDiv.className = "product";
+
+        // extra-info depending on product category
+        let extraInfo = "";
+        if (category === "coffee" || category === "tea") {
+            extraInfo = `<span>${item.weight}</span>`;
+        } else if (category === "mugs") {
+            extraInfo = `<span>${item.capacity}</span>`;
+        }
+        else if (category === "accessories") {
+            extraInfo = `<span>${item.unit}</span>`;
+        }
+
+        // creating proper div element
+        productDiv.innerHTML = `
+                    <img src="${item.img}" alt="${item.name}">
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <span title="Reviews">(${item.reviews})</span>
+                    </div>
+                    <h4>${item.name}</h4>
+                    <div class="extra-info">
+                        ${extraInfo}
+                        <p>${item.price}</p>
+                    </div>
+                    <div class="cart-wrapper">
+                        <i class="ri-shopping-cart-line cart-icon" title="Add to cart"></i>
+                    </div>
+        `;
+        productContent.appendChild(productDiv);
+    });
+};
+
+//change display
+function displayEl (activeList, activeProduct, activeCategory) {
+    resetClassAll();
+    defaultProductTxt.classList.add("hidden");
+    elements[activeList].classList.add("shown");
+    elements[activeProduct].classList.remove("hidden");
+    renderProducts(activeCategory);
+};
+
+// () => {} is like a "wrapper" so the displayEl( function can be called properly (not instantly on click))
+elements.coffeeList.addEventListener("click", () => displayEl("coffeeList", "coffeeProduct","coffee"));
+elements.teaList.addEventListener("click", () => displayEl("teaList", "teaProduct", "tea"));
+elements.mugsList.addEventListener("click",() => displayEl("mugsList", "mugsProduct", "mugs"));
+elements.accessoriesList.addEventListener("click",() => displayEl("accessoriesList", "accessoriesProduct", "accessories"));

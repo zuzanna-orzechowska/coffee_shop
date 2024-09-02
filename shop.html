@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="images/coffee-cup-logo.png">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <script defer src="app.js"></script>
+    <script type="module" defer src="shopApp.js"></script>
     <title>Shop | Cofove ☕❤️</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
             </ul>
         </nav>
         <div id="shop-content">
-            <i class="ri-user-6-line"></i>
+            <i class="ri-user-6-line" id="user-account"></i>
             <i class="ri-shopping-basket-line" id="shopping-cart"></i>
         </div>
         <i class="ri-menu-5-line" id="menu-icon" onclick="changeMenuIcon()"></i>
@@ -37,10 +38,10 @@
         <div class="list-search-wrapper">
             <div class="list">
                 <ul>
-                    <li>Coffee</li>
-                    <li>Tea</li>
-                    <li>Mugs</li>
-                    <li>Accessories</li>
+                    <li id="coffee-li">Coffee</li>
+                    <li id="tea-li">Tea</li>
+                    <li id="mugs-li">Mugs</li>
+                    <li id="accessories-li">Accessories</li>
                 </ul>
             </div>
             <div class="search">
@@ -57,11 +58,36 @@
             </select>
         </div>
         <div class="product-wrapper">
-            <div id="coffee-product">
-                <div class="product">
-                    <p>Photo / stars (reviews) / Name / Price / Add to cart</p>
-                </div>
+            <div id="default-product">
+                <!--<p>tadam</p>
+               <div class="product">
+                    <img src="shop-images/test.jpg" alt="">
+                    <div class="stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <span title="Reviews">(6)</span>
+                    </div>
+                    <h4>Colombian Roast</h4>
+                    <div class="extra-info">
+                        <span>500g</span>
+                        <p>9.90$</p>
+                    </div>
+                    <div class="cart-wrapper">
+                        <i class="ri-shopping-cart-line cart-icon" title="Add to cart"></i>
+                    </div>
+                </div>    -->
             </div>
+
+            <div id="coffee-product" class="hidden"></div>
+
+            <div id="tea-product" class="hidden"></div>
+
+            <div id="mugs-product" class="hidden"> </div>
+
+            <div id="accessories-product" class="hidden"></div>
         </div>
     </section>
 

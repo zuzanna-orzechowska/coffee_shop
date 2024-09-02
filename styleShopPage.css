@@ -32,6 +32,103 @@ h1 {
     text-decoration: underline;
 }
 
+/*hidden, shown elements*/
+.hidden {
+    display: none !important;
+}
+
+.shown {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+/*list and search content*/
 .list-search-wrapper {
-    border: 3px solid pink;
+    width: 100%;
+    max-width: 74vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(254, 229, 204,0.3);
+    border-radius: 3px 60px;
+    padding: 2vw;
+    font-size: 20px;
+}
+
+.list-search-wrapper .list ul {
+    list-style: none;
+    display: flex;
+    gap: 4vw;
+    font-weight: bold;
+}
+
+.list-search-wrapper .list ul li {
+    transition: all 0.3s ease;
+}
+
+.list-search-wrapper .list ul li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*product wrapper styling*/
+.product-wrapper {
+    width: 100%;
+    max-width: 74vw;
+    box-sizing: border-box;
+}
+
+#default-product, #coffee-product, #tea-product, #mugs-product, #accessories-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4vw;
+}
+
+.product {
+    border: 0.5px black solid;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+
+.product .stars {
+    color: black;
+    font-size: 18px;
+}
+
+.product h4 {
+    font-size: 20px;
+}
+
+.product .extra-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product .extra-info span {
+    font-style: italic;
+}
+
+.product .extra-info p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product .cart-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.product .cart-wrapper i {
+    font-size: 28px;
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.product .cart-wrapper i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
