@@ -52,7 +52,7 @@ h1 {
     background: rgba(254, 229, 204,0.3);
     border-radius: 3px 60px;
     padding: 2vw;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .list-search-wrapper .list ul {
@@ -78,7 +78,7 @@ h1 {
     box-sizing: border-box;
 }
 
-#default-product, #coffee-product, #tea-product, #mugs-product, #accessories-product {
+#coffee-product, #tea-product, #mugs-product, #accessories-product {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 4vw;
