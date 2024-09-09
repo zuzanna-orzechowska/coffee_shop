@@ -101,23 +101,36 @@ h1 {
     flex-direction: column;
     gap: 2vh;
     width: 50vw;
+    padding-top: 4vh;
+}
+
+#default-product #img-txt {
+    background-image: url("shop-images/default-img.jpg");
+    width: 100%;
+    max-width: 80vw;
+    height: 60vh;
+    border: 0.5px black solid;
+    border-radius: 6px;
+}
+
+#default-product #img-txt h3 {
+    position: relative;
+    top: 180px;
+    left: 160px;
+    width: 260px;
+    font-size: 50px;
+}
+
+#default-product #img-txt span {
+    color: wheat;
+    font-family: "Playwrite GB S", sans-serif;
+    font-size: 56px;
+    text-shadow: 3px 3px black;
 }
 
 #default-product p {
     line-height: 1.6;
-}
-
-#default-product p:not(#first-p) {
     font-size: 26px;
-}
-
-#default-product #first-p {
-    font-style: italic;
-    border:  0.5px black solid;
-    padding: 2vw;
-    border-radius: 6px;
-    background: wheat;
-    box-shadow: 0px 15px 36px 0px rgb(201, 204, 217);
 }
 
 #coffee-product, #tea-product, #mugs-product, #accessories-product {
