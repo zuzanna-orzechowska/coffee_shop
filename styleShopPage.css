@@ -147,6 +147,10 @@ h1 {
     gap: 0.5vh;
 }
 
+.product img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
 
 .product .stars {
     color: black;

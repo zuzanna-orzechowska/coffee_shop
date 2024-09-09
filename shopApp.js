@@ -87,6 +87,12 @@ function renderProducts(category) {
                     </div>
         `;
         productContent.appendChild(productDiv);
+
+        const imgEl = productDiv.querySelector("img");
+        imgEl.addEventListener("click", () => {
+            alert("Ups, nothing more to see here, work in progress ;-)");
+        });
+        
     });
 };
 
