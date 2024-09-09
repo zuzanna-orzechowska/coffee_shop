@@ -4,8 +4,9 @@ import { items } from "./items.js";
 const elName = ["coffeeList", "teaList", "mugsList", "accessoriesList", "coffeeProduct", "teaProduct", "mugsProduct","accessoriesProduct"];
 const idName = ["coffee-li", "tea-li", "mugs-li", "accessories-li", "coffee-product", "tea-product", "mugs-product", "accessories-product"];
 const elements = {}; //store references to DOM elements from above arrays
-// console.log(elements); // reference to object element example -  elements.coffeeList.XX
+
 let defaultProductTxt = document.getElementById("default-product");
+let sortWrapper = document.querySelector(".sort-wrapper");
 
 for (let i = 0; i<idName.length; i++) {
     elements[elName[i]] = document.getElementById(idName[i]);
@@ -15,13 +16,29 @@ for (let i = 0; i<idName.length; i++) {
 function resetClassAll () {
     for (let i = 0; i < 4; i++) { //first 4 are list elements
         elements[elName[i]].classList.remove("shown"); //ex. elements[0] = coffeeList
-        console.log('reset shown class for:', elName[i]);
     }
 
     for (let i = 4; i<elName.length; i++) { // another 4 are product elements
         elements[elName[i]].classList.add("hidden");
-        console.log('added hidden class to:', elName[i]);
     }
+};
+
+//sort elements
+let sortSelect = document.getElementById("sortSelect");
+
+function sortProducts (product, type) {
+    switch(type) {
+        case "price-asc":
+            return product.sort((a,b) => a.price - b.price);
+        case "price-desc":
+            return product.sort((a,b) => b.price - a.price);
+        case "name-asc":
+            return product.sort((a,b) => a.name.localeCompare(b.name));
+        case "name-desc":
+            return product.sort((a,b) => b.name.localeCompare(a.name));
+        default:
+            return product;
+    };
 };
 
 //render products in proper div
@@ -29,7 +46,11 @@ function renderProducts(category) {
     const productContent = document.getElementById(`${category}-product`);
     productContent.innerHTML = ""; // clearing other product div
 
-    const filteredProducts = items.filter(item => item.category === category); // elements which matches category ex. only coffee products
+    let filteredProducts = items.filter(item => item.category === category); // elements which matches category ex. only coffee products
+    
+    const selectedSort = sortSelect.value;
+    filteredProducts = sortProducts(filteredProducts,selectedSort);
+
     filteredProducts.forEach(item => {
         const productDiv = document.createElement("div");
         productDiv.className = "product";
@@ -59,7 +80,7 @@ function renderProducts(category) {
                     <h4>${item.name}</h4>
                     <div class="extra-info">
                         ${extraInfo}
-                        <p>${item.price}</p>
+                        <p>${item.price.toFixed(2)} $</p>
                     </div>
                     <div class="cart-wrapper">
                         <i class="ri-shopping-cart-line cart-icon" title="Add to cart"></i>
@@ -69,10 +90,19 @@ function renderProducts(category) {
     });
 };
 
+//sort
+sortSelect.addEventListener("change", () => {
+    //first elements active (and seen) which doesn't have .hidden class / replace() deletes -product txt so active category (ex.coffee) is displayed
+    const activeCategory = document.querySelector(".product-wrapper > div:not(.hidden)").id.replace("-product", "");
+    renderProducts(activeCategory); // after changing sort, display elements again
+});
+
 //change display
 function displayEl (activeList, activeProduct, activeCategory) {
     resetClassAll();
+    sortSelect.selectedIndex = 0; // default select value when changing category
     defaultProductTxt.classList.add("hidden");
+    sortWrapper.classList.remove("hidden");
     elements[activeList].classList.add("shown");
     elements[activeProduct].classList.remove("hidden");
     renderProducts(activeCategory);
@@ -83,3 +113,5 @@ elements.coffeeList.addEventListener("click", () => displayEl("coffeeList", "cof
 elements.teaList.addEventListener("click", () => displayEl("teaList", "teaProduct", "tea"));
 elements.mugsList.addEventListener("click",() => displayEl("mugsList", "mugsProduct", "mugs"));
 elements.accessoriesList.addEventListener("click",() => displayEl("accessoriesList", "accessoriesProduct", "accessories"));
+
+//search input

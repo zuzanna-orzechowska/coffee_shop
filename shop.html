@@ -48,19 +48,19 @@
                 <input type="search" id="search">
             </div>
         </div>
-        <div class="sort-wrapper">
-            <select name="" id="">
+        <div class="sort-wrapper hidden">
+            <select name="sort" id="sortSelect">
                 <option value="" disabled selected>Sort by</option>
-                <option value="">Price (low to high)</option>
-                <option value="">Price (high to low)</option>
-                <option value="">A-Z</option>
-                <option value="">Z-A</option>
+                <option value="price-asc">Price (low to high)</option>
+                <option value="price-desc">Price (high to low)</option>
+                <option value="name-asc">A-Z</option>
+                <option value="name-desc">Z-A</option>
             </select>
         </div>
         <div class="product-wrapper">
             <div id="default-product">
-                <p>Discover the essence of fine products at <span>Cofove</span>. Indulge in the rich flavors of our premium coffee beans sourced from the finest regions around the world.Experience the soothing aromas and diverse blends of our high-quality teas, carefully curated for your enjoyment.Enhance your coffee or tea ritual with our stylish and practical mugs, designed to complement your taste.Elevate your brewing experience with our range of accessories, including filters, grinders, and more.</p>
-                <p>Click any link above and discover our products </p>
+                <p id="first-p">Discover the essence of fine products at <span>Cofove</span>. Indulge in the rich flavors of our premium coffee beans sourced from the finest regions around the world. Experience the soothing aromas and diverse blends of our high-quality teas, carefully curated for your enjoyment. Enhance your coffee or tea ritual with our stylish and practical mugs, designed to complement your taste. Elevate your brewing experience with our range of accessories, including filters, grinders, and more.</p>
+                <p><b>Click</b> any link <b>above</b> and discover our products </p>
             </div>
 
             <div id="coffee-product" class="hidden"></div>
@@ -73,6 +73,7 @@
         </div>
     </section>
 
+    <div class="section-cut"></div>
     <footer>
         <div class="footer-icon">
             <a href="#logo"><img src="images/coffee-cup-logo.png" alt="Cofove logo" title="Go up"></a>
