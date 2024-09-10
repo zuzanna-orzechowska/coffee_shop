@@ -71,18 +71,44 @@ h1 {
     transform: scale(1.1);
 }
 
+/*search input styling*/
+.search-wrapper {
+    display: block;
+}
+
+.search-wrapper i {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: 4px;
+    right: 42px;
+}
+
+.search-wrapper i:hover {
+    cursor: pointer;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
 /*sort select styling*/
 .sort-wrapper {
     display: block;
 }
 
-.sort-wrapper select {
+.sort-wrapper select, .search-wrapper input {
     font-size: 20px;
     font-weight: bold;
     padding: 3px;
     width: 300px;
     border: 2px solid black;
     border-radius: 6px;
+}
+
+.sort-wrapper select {
     text-align: center;
 }
 

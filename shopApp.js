@@ -41,6 +41,32 @@ function sortProducts (product, type) {
     };
 };
 
+sortSelect.addEventListener("change", () => {
+    //first elements active (and seen) which doesn't have .hidden class / replace() deletes -product txt so active category (ex.coffee) is displayed
+    const activeCategory = document.querySelector(".product-wrapper > div:not(.hidden)").id.replace("-product", "");
+    renderProducts(activeCategory); // after changing sort, display elements again
+});
+
+//search input
+const searchInput = document.getElementById("search");
+const searchWrapper = document.querySelector(".search-wrapper");
+
+searchInput.addEventListener("input", function() {
+    const searchTxt = this.value.toLowerCase(); // text written in search input
+    const activeCategory = document.querySelector(".product-wrapper > div:not(.hidden)").id.replace("-product", "");
+
+    const searchProducts = document.querySelectorAll(`#${activeCategory}-product .product`);
+
+    searchProducts.forEach(searchProduct => {
+        const productName = searchProduct.querySelector("h4").innerText.toLowerCase();
+        if (productName.includes(searchTxt)) {
+            searchProduct.classList.remove("hidden");
+        } else {
+            searchProduct.classList.add("hidden");
+        }
+    });
+});
+
 //render products in proper div
 function renderProducts(category) {
     const productContent = document.getElementById(`${category}-product`);
@@ -96,12 +122,6 @@ function renderProducts(category) {
     });
 };
 
-//sort
-sortSelect.addEventListener("change", () => {
-    //first elements active (and seen) which doesn't have .hidden class / replace() deletes -product txt so active category (ex.coffee) is displayed
-    const activeCategory = document.querySelector(".product-wrapper > div:not(.hidden)").id.replace("-product", "");
-    renderProducts(activeCategory); // after changing sort, display elements again
-});
 
 //change display
 function displayEl (activeList, activeProduct, activeCategory) {
@@ -109,6 +129,7 @@ function displayEl (activeList, activeProduct, activeCategory) {
     sortSelect.selectedIndex = 0; // default select value when changing category
     defaultProductTxt.classList.add("hidden");
     sortWrapper.classList.remove("hidden");
+    searchWrapper.classList.remove("hidden");
     elements[activeList].classList.add("shown");
     elements[activeProduct].classList.remove("hidden");
     renderProducts(activeCategory);
@@ -118,6 +139,4 @@ function displayEl (activeList, activeProduct, activeCategory) {
 elements.coffeeList.addEventListener("click", () => displayEl("coffeeList", "coffeeProduct","coffee"));
 elements.teaList.addEventListener("click", () => displayEl("teaList", "teaProduct", "tea"));
 elements.mugsList.addEventListener("click",() => displayEl("mugsList", "mugsProduct", "mugs"));
-elements.accessoriesList.addEventListener("click",() => displayEl("accessoriesList", "accessoriesProduct", "accessories"));
-
-//search input
+elements.accessoriesList.addEventListener("click",() => displayEl("accessoriesList", "accessoriesProduct", "accessories")); 
