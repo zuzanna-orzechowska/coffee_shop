@@ -7,13 +7,30 @@
 }
 
 #shop-content i {
-    font-size: 45px;
+    font-size: 50px;
     margin-right: 2vw;
     color: wheat;
 }
 
 #shop-content i:hover {
     cursor: pointer;
+}
+
+/*shopping cart*/
+#shop-content span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    position: relative;
+    left: 120px;
+    bottom: 20px;
 }
 
 section {
@@ -41,6 +58,7 @@ h1 {
     transform: scale(1.1);
     text-decoration: underline;
 }
+
 
 /*list and search content*/
 .list-search-wrapper {
@@ -126,14 +144,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     display: flex;
     flex-direction: column;
     gap: 2vh;
-    width: 50vw;
     padding-top: 4vh;
 }
 
 #default-product #img-txt {
     background-image: url("shop-images/default-img.jpg");
+    background-repeat: no-repeat;
     width: 100%;
-    max-width: 80vw;
+    max-width: 60vw;
+    display: flex;
+    margin: auto;
     height: 60vh;
     border: 0.5px black solid;
     border-radius: 6px;
@@ -217,3 +237,57 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     cursor: pointer;
     transform: scale(1.1);
 }
+
+@media (max-width: 1495px) {
+    #default-product #img-txt {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 1255px) {
+    #default-product #img-txt {
+        background-position: center;
+    }
+
+    #default-product #img-txt h3 {
+        top: 140px;
+        left: 100px;
+    }
+}
+
+@media (max-width: 1080px) {
+    #default-product #img-txt h3 {
+        left: 80px;
+    }
+}
+
+@media (max-width: 1080px) {
+    #default-product #img-txt {
+       max-width: 70vw;
+    }
+
+    #default-product #img-txt h3 {
+        left: 80px;
+    }
+}
+
+@media (max-width: 895px) {
+    #default-product #img-txt {
+       max-width: 85vw;
+    }
+
+    #default-product #img-txt h3 {
+        left: 50px;
+    }
+}
+
+@media (max-width: 730px) {
+    #default-product #img-txt {
+       max-width: 95vw;
+    }
+
+    #default-product #img-txt h3 {
+        left: 40px;
+    }
+}
+

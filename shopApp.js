@@ -140,3 +140,5 @@ elements.coffeeList.addEventListener("click", () => displayEl("coffeeList", "cof
 elements.teaList.addEventListener("click", () => displayEl("teaList", "teaProduct", "tea"));
 elements.mugsList.addEventListener("click",() => displayEl("mugsList", "mugsProduct", "mugs"));
 elements.accessoriesList.addEventListener("click",() => displayEl("accessoriesList", "accessoriesProduct", "accessories")); 
+
+// shopping cart

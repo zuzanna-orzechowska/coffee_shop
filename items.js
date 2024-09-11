@@ -216,9 +216,3 @@ export const items = [
         category: 'accessories',
     }
 ]
-
-//localStorage.setItem('basket', JSON.stringify([['1', 3], ['2', 1], ['3', 10]]))
-
-//const itemsInBasket = localStorage.getItem('basket')
-
-// swtorzyć produkty za pomocą js / do basketa localstorage / map i filter! metody array
